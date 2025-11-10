@@ -9,12 +9,13 @@
 </head>
 <body>
     <header>
+        <div class="start-box"></div>
         <div class="header-container">
         <!-- Hamburger Menu -->
-        <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+        <button class="menu-toggle" aria-label="Open menu"><img src="/components/icons/hamburger.svg" alt="hamburger-menu"></button>
 
         <!-- Logo -->
-        <a href="index.php" class="logo">kinforma <img class="logo-header" src="/components/logo/Kinforma_main_logo.png" alt="kinforma-logo"></a>
+        <a href="index.php" class="logo"><img class="logo-header" src="/components/logo/Kinforma_main_logo.png" alt="kinforma-logo"></a>
 
         <!-- Quick Actions -->
         <div class="quick-actions">
