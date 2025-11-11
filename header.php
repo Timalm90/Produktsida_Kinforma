@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="/stylesheet/header.css">
     <link rel="stylesheet" href="/stylesheet/footer.css">
+    <link rel="stylesheet" href="/stylesheet/index.css">
 
     <title>Kinforma</title>
 </head>

@@ -41,12 +41,13 @@
     position: absolute;
     top: 130px;
     margin: 2rem;
+    z-index: 1;
 }
 
-.header-image img {
+/* .header-image img {
     width: 100%;
     height: 600px;
-}
+} */
 
 .header-text h1, p {
     color: white;
@@ -65,10 +66,4 @@
 
 nav {
     display: none;
-}
-
-.header-mountain img {
-    position: absolute;
-    width: 100%;
-    top: 505px;
 }
