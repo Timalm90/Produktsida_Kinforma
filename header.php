@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="/stylesheet/header.css">
+    <link rel="stylesheet" href="/stylesheet/footer.css">
+
     <title>Kinforma</title>
 </head>
 <body>
