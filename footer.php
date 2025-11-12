@@ -2,15 +2,19 @@
     <div class="footer-om-oss">
         <ul>
             <li class="content">
-                <a href="#">Mer om oss 
-                    <img src="/components/icons/arrows/arrow-link.svg" alt="arrow">
-                </a>
+                <a href="#">Mer om oss </a>
+                <img src="/components/icons/arrows/arrow-link.svg" alt="arrow">
             </li>
-
             <hr>
-            <li><a href="#">Behöver du hjälp?</a></li>
+            <li class="content">
+                <a href="#">Behöver du hjälp?</a>
+                <img src="/components/icons/arrows/arrow-link.svg" alt="arrow">
+            </li>
             <hr>
-            <li><a href="#">Våra samarbeten</a></li>
+            <li class="content">
+                <a href="#">Våra samarbeten</a>
+                <img src="/components/icons/arrows/arrow-link.svg" alt="arrow">
+            </li>
             <hr>
         </ul>
     </div>
@@ -35,14 +39,19 @@
     </section>
     <hr>
     <div class="footer-end">
-        <a href="#">Jobb på Kinforma</a>
-        <a href="#">Företag</a>
-        <p>
-            Klara Norra Kyrkogata 29, 
-            111 22 Stockholm
-            Tel. +46 8 54522901
-            SWEDEN
-        </p>
+        <ul>
+            <li><a href="#">Jobb på Kinforma</a></li>
+            <li><a href="#">Företag</a></li>
+            <li><p>
+                Klara Norra Kyrkogata 29,
+                111 22 Stockholm
+                SWEDEN
+            </p></li>
+            <li><p>Tel: +46 8 54522901</p></li>
+        </ul>
+        <img src="/components/logo/Kinforma_main_logo.png" alt="logo">
+        
+        
 
     </div>
 
