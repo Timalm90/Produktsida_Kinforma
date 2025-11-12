@@ -58,15 +58,15 @@
     <ul>
       <details>
         <summary><li><a href="#">Sortera efter produkt</a></li></summary>
-        <div class="p-outline"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum qui eum, praesentium quibusdam aperiam veniam laboriosam blanditiis repellat molestias tempore asperiores ullam earum consectetur dolor obcaecati ratione cupiditate, error quidem?</p></div>
+        <div class="dropdown"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum qui eum, praesentium quibusdam aperiam veniam laboriosam blanditiis repellat molestias tempore asperiores ullam earum consectetur dolor obcaecati ratione cupiditate, error quidem?</p></div>
       </details>
       <details>
         <summary><li><a href="#">Sortera efter aktivitet</a></li></summary>
-        <div class="p-outline"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis sit voluptatibus possimus ea ullam totam neque voluptas, pariatur fugit laudantium exercitationem blanditiis necessitatibus? Ex pariatur repellat rem sunt voluptatem?</p></div>
+        <div class="dropdown"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis sit voluptatibus possimus ea ullam totam neque voluptas, pariatur fugit laudantium exercitationem blanditiis necessitatibus? Ex pariatur repellat rem sunt voluptatem?</p></div>
       </details>
       <details>
         <summary><li><a href="#">Sortera efter kvalitet</a></li></summary>
-        <div class="p-outline"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci sit voluptate dolore veniam quaerat, repudiandae atque explicabo aliquam corporis illum cupiditate earum quibusdam laborum quos ea eaque nemo quia!</p></div>
+        <div class="dropdown"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga adipisci sit voluptate dolore veniam quaerat, repudiandae atque explicabo aliquam corporis illum cupiditate earum quibusdam laborum quos ea eaque nemo quia!</p></div>
       </details>
     </ul>
     <hr />

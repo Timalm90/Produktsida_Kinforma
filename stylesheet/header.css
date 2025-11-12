@@ -214,13 +214,13 @@ details p {
     padding: 20px;
 }
 
-.p-outline{
+.dropdown{
     height: 200px;
     width: 100vw;
 
     /* background: #60262683; */
     /* From https://css.glass */
-background: rgba(98, 98, 98, 0.444);
+background: rgba(232, 232, 232, 0.444);
 border-radius: 4px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
