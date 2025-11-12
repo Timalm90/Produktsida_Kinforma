@@ -1,4 +1,6 @@
-
+/* ===============================
+   Header Container & Logo
+=============================== */
 .logo-header {
     height: 18px;
     float: left;
@@ -9,45 +11,110 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .start-box {
     background-color: #AAAAAA;
     height: 40px;
     width: 100%;
-    z-index: 5;
+    position: relative; /* ensure z-index works */
+    z-index: 20;        /* on top of everything */
 }
 
-.menu-toggle {
-    width: 25.5px;
-    height: 17px;
-}
-    
 
+/* ===============================
+   Header Container & Quick Actions
+=============================== */
 .header-container {
-  background-color: #d9d9d9;
-  position: absolute; /* back to original */
-  width: 100%;
-  z-index: 10;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.s ease, opacity 0.5s ease;
 }
 
-.quick-actions  {
-    float: right;    
-}
-
-.quick-actions, .menu-toggle {
-      filter: invert(1); /* Inverts color of icon images*/
+/* Quick-actions */
+.quick-actions {
+    display: flex;
+    align-items: center;
+    filter: invert(1);
 }
 
 .quick-actions button {
-    padding: 0 0.6em 0 0.6em;
+    background: none;
+    border: none;
+    padding: 0 0.6em;
+    cursor: pointer;
 }
 
+/* ===============================
+   Hamburger Menu
+=============================== */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1100;
+}
+
+.menu-toggle .bar {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger active (X shape + black bars) */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 4px);
+    background-color: #000000;
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -4px);
+    background-color: #000000;
+}
+
+/* ===============================
+   Image/Icon Inversion
+=============================== */
+/* Default: white */
+.header-container img {
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+/* When menu is open: invert logo and quick-actions icons to black */
+.header-container.menu-open .logo-header,
+.header-container.menu-open .quick-actions img {
+    filter: invert(0);
+}
+
+/* ===============================
+   Header Container background overlay
+=============================== */
+.header-container.menu-open {
+    background-color: rgba(217, 217, 217, 0.95); /* slightly opaque */
+}
+
+/* ===============================
+   Header Text / Image
+=============================== */
 .header-text {
     position: absolute;
     top: 130px;
@@ -56,10 +123,10 @@
 
 .header-image img {
     width: 100%;
-
 }
 
-.header-text h1, p {
+.header-text h1,
+.header-text p {
     color: white;
     text-align: center;
 }
@@ -73,71 +140,40 @@
     font-size: 12px;
     font-weight: 400;
 }
-/* ==============================
-   Hamburger Icon Animation
-============================== */
-.menu-toggle {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 25px;
-  height: 18px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  z-index: 1100;
-  filter: invert(1);
-}
 
-.menu-toggle .bar {
-  height: 2px;
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 2px;
-  transition: all 0.3s ease;
-}
-
-/* Active (X shape) */
-.menu-toggle.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 4px);
-}
-
-.menu-toggle.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-toggle.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -4px);
-}
-
+/* ===============================
+   Main Menu
+=============================== */
+/* Main Menu (curtain effect, stretches to top) */
 .main-menu {
-  display: none; /* hidden initially */
-  width: 100%;
-  padding-top: 20px;  
-  background: #D9D9D9;
-  position: absolute;
-  top: 85px;
-  left: 0;
-  z-index: 1001;
-  transition: all 0.3s ease;
-  overflow: scroll;
-  height: 100%;
+    height: 0;               /* collapsed initially */
+    overflow: hidden;
+    width: 100%;
+    background: #D9D9D9;
+    position: absolute;
+    top: 0;                  /* start at top of viewport */
+    left: 0;
+    z-index: 10;
+    transition: height 0.5s ease;
 }
 
-/* When menu is visible */
+/* Inner wrapper to offset menu content below header */
+.main-menu .menu-inner {
+    padding-top: 100px;      /* keep content below header */
+}
+
+/* When menu is active: fill full viewport */
 .main-menu.active {
-  display: block;
+    height: 100vh;           /* full viewport height */
 }
 
-
-.main-menu li{
+.main-menu li {
     margin-bottom: 25px;
     margin-top: 10px;
     padding-left: 20px;
 }
 
-.main-menu hr{
+.main-menu hr {
     border: .5px solid rgb(128, 128, 128);
     margin-top: 10px;
 }
@@ -145,35 +181,24 @@
 .main-menu p {
     color: black;
 }
-.header-mountain img {
-    position: absolute;
-    border-radius: 0px;
-    width: 100%;
-    transform: translateY(-32vw);
 
-
-}
-
-
-/*. Details element styling */
+/* ===============================
+   Dropdown / Details
+=============================== */
 details {
-  margin-block: 0.5rem;
-  padding-block: 0.5rem;
-  padding-right: 40px;
+    margin-block: 0.5rem;
+    padding-block: 0.5rem;
+    padding-right: 40px;
 }
 
 summary {
-  position: relative;
-  cursor: pointer;
-  list-style: none; /* removes default arrow */
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+}
 
-  &::marker {
-    content: "";
-  }
-
-  /* Base lines */
-  &::before,
-  &::after {
+summary::before,
+summary::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -182,30 +207,25 @@ summary {
     height: 3px;
     background: black;
     border-radius: 2px;
-    transition: transform .1s ease-in;
-  }
-
-  /* Create “>” shape */
-  &::before {
-    transform: translateY(-5px) rotate(45deg);
-    
-  }
-
-  &::after {
-    transform: translateY(5px) rotate(-45deg);
-  }
+    transition: transform 0.1s ease-in;
 }
 
-/* Animate into “X” when open */
+summary::before {
+    transform: translateY(-5px) rotate(45deg);
+}
+
+summary::after {
+    transform: translateY(5px) rotate(-45deg);
+}
+
 details[open] summary::before {
-   transform: translateY(3PX) rotate(45deg) translateX(0px);
+    transform: translateY(3px) rotate(45deg) translateX(0px);
     width: 20px;
     height: 3px;
 }
 
 details[open] summary::after {
-    transform: translateY(16PX) rotate(-45deg) translateX(18px);
-
+    transform: translateY(16px) rotate(-45deg) translateX(18px);
     width: 20px;
     height: 3px;
 }
@@ -214,13 +234,13 @@ details p {
     padding: 20px;
 }
 
-.dropdown{
+/* ===============================
+   Dropdown Glass Effect
+=============================== */
+.dropdown {
     height: 200px;
     width: 100vw;
-
-    /* background: #60262683; */
-    /* From https://css.glass */
-background: rgba(232, 232, 232, 0.444);
-border-radius: 4px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(232, 232, 232, 0.444);
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
