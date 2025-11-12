@@ -1,7 +1,15 @@
+
 .logo-header {
-    width: 38px;
-    height: 23px;
-    
+    height: 18px;
+    float: left;
+}
+
+.header-left {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .start-box {
@@ -15,22 +23,25 @@
     width: 25.5px;
     height: 17px;
 }
-
-.logo {
-    padding: 5px;
     
-}
 
 .header-container {
-    position: absolute;
-    width: 100%;
-    float: left;
-    z-index: 10;
-    padding: 1rem;
+  background-color: #d9d9d9;
+  position: absolute; /* back to original */
+  width: 100%;
+  z-index: 10;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.quick-actions {
+.quick-actions  {
     float: right;    
+}
+
+.quick-actions, .menu-toggle {
+      filter: invert(1); /* Inverts color of icon images*/
 }
 
 .quick-actions button {
@@ -45,7 +56,7 @@
 
 .header-image img {
     width: 100%;
-    height: 600px;
+
 }
 
 .header-text h1, p {
@@ -62,13 +73,154 @@
     font-size: 12px;
     font-weight: 400;
 }
-
-nav {
-    display: none;
+/* ==============================
+   Hamburger Icon Animation
+============================== */
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100;
+  filter: invert(1);
 }
 
+.menu-toggle .bar {
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Active (X shape) */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 4px);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -4px);
+}
+
+.main-menu {
+  display: none; /* hidden initially */
+  width: 100%;
+  padding-top: 20px;  
+  background: #D9D9D9;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  overflow: scroll;
+  height: 100%;
+}
+
+/* When menu is visible */
+.main-menu.active {
+  display: block;
+}
+
+
+.main-menu li{
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.main-menu hr{
+    border: .5px solid rgb(128, 128, 128);
+    margin-top: 10px;
+}
+
+.main-menu p {
+    color: black;
+}
 .header-mountain img {
     position: absolute;
+    border-radius: 0px;
     width: 100%;
-    top: 505px;
+    transform: translateY(-32vw);
+
+
+}
+
+
+/*. Details element styling */
+details {
+  margin-block: 0.5rem;
+  padding-block: 0.5rem;
+  padding-right: 40px;
+}
+
+summary {
+  position: relative;
+  cursor: pointer;
+  list-style: none; /* removes default arrow */
+
+  &::marker {
+    content: "";
+  }
+
+  /* Base lines */
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 15px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: transform .1s ease-in;
+  }
+
+  /* Create “>” shape */
+  &::before {
+    transform: translateY(-5px) rotate(45deg);
+    
+  }
+
+  &::after {
+    transform: translateY(5px) rotate(-45deg);
+  }
+}
+
+/* Animate into “X” when open */
+details[open] summary::before {
+   transform: translateY(3PX) rotate(45deg) translateX(0px);
+    width: 20px;
+    height: 3px;
+}
+
+details[open] summary::after {
+    transform: translateY(16PX) rotate(-45deg) translateX(18px);
+
+    width: 20px;
+    height: 3px;
+}
+
+details p {
+    padding: 20px;
+}
+
+.p-outline{
+    height: 200px;
+    width: 100vw;
+
+    /* background: #60262683; */
+    /* From https://css.glass */
+background: rgba(98, 98, 98, 0.444);
+border-radius: 4px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
