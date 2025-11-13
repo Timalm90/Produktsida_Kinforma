@@ -14,7 +14,7 @@
 }
 
 .start-box {
-    background-color: #AAAAAA;
+    background-color: var(--sky-blue);
     height: 40px;
     width: 100%;
     position: relative; /* ensure z-index works */
