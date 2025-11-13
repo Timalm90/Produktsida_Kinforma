@@ -47,7 +47,7 @@
   </div>
 
   <!-- Hidden Navigation Menu -->
-<nav class="main-menu" id="mainMenu">
+<nav class="main-menu frosted-glass" id="mainMenu">
   <div class="menu-inner">
     <hr />
     <ul>
