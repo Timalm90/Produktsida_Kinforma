@@ -5,17 +5,16 @@
 <main>
     <div class="header-image">
         <div class="header-text">
-            <h1>Framtidens mode, idag.</h1>
-            <p>Upplev en ny dimension av mode med vår senaste kollektion. Designad av dig, drivet av teknik, skapat för planeten.</p>
+            <h1>Framtidens <br>mode,<span> idag</span>.</h1>
         </div>
 
         <div class="hero-wrapper">
             <div class="hero-image">
-                <img src="/components/images/skiing.png" alt="header-image">
+                <img src="/components/images/BG_motocross.png" alt="header-image">
             </div>
             
-            <div class="mountain-illustration">
-                <img src="/components/images/mountain.svg" alt="mountain-illustration">
+            <!-- <div class="mountain-illustration">
+                <img src="/components/images/mountain.svg" alt="mountain-illustration"> -->
             </div>
         </div>
     </div>

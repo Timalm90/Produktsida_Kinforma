@@ -109,9 +109,13 @@
 /* ===============================
    Header Text / Image
 =============================== */
+.header-image {
+    display: flex;
+    justify-content: center;
+}
 .header-text {
     position: absolute;
-    top: 130px;
+    top: 80px;
     margin: 2rem;
 }
 

@@ -16,7 +16,7 @@
 </head>
 <body>
   <header>
-  <div class="start-box"></div>
+  <!-- <div class="start-box"></div> -->
 
   <div class="header-container">
     <!-- Hamburger Menu -->
