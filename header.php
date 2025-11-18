@@ -6,10 +6,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="stylesheet/style.css" />
+  <link rel="stylesheet" href="stylesheet/main.css" />
   <link rel="stylesheet" href="/stylesheet/header.css" />
+  <link rel="stylesheet" href="/stylesheet/hero.css" />
+  <link rel="stylesheet" href="stylesheet/products.css" />
+  <link rel="stylesheet" href="stylesheet/techviz.css" />
   <link rel="stylesheet" href="/stylesheet/footer.css" />
-  <link rel="stylesheet" href="/stylesheet/index.css" />
 
 
   <title>Kinforma</title>
