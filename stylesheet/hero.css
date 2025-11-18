@@ -1,26 +1,78 @@
-h1 span{
-font-weight: 300;
-color: #ffe48d;
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url("/components/images/BG_motocross.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
-.hero-image {
-    /* position: relative; */
+.hero-content {
     width: 100%;
-    height: 70vh;
-    overflow: hidden;
+    max-width: 800px;
+    height: 75%;                 /* Keeps text high and gives room below */
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    /* Instead of perfect distribution, we control spacing manually */
+    justify-content: flex-start; /* Text stays near the top */
+    align-items: center;
+
+    padding-top: 1rem;
+    position: relative;
 }
 
-.hero-wrapper {
-    position: relative; /* key part! */
-    width: 100%;
-    height: 100%;
+/* Push buttons upward slightly */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+
+    position: absolute;
+    bottom: 30%;                 /* Adjust this to move buttons up/down */
 }
 
-.hero-image img {
-    
-    position:relative;
-    bottom: px;
-    width: 100%;
-    overflow: hidden;
-    display: block;
+/* Heading */
+.hero-content h1 {
+    font-size: clamp(2rem, 6vw, 4rem);  
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.hero-accent {
+    font-weight: 300;
+    color: #ffe48d;
+}
+
+/* Buttons */
+.hero-buttons button {
+    padding: 1.8rem 1.3rem;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;          /* ⬅ prevents line breaks */
+
+    background: rgba(150,150,150,0.06);
+    border: .5px solid white;
+    border-radius: 17px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    backdrop-filter: blur(4px);
+    transition: 0.2s;
+}
+
+.hero-buttons button:hover {
+    background: rgba(255,255,255,0.35);
 }

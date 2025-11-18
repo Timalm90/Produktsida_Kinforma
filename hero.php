@@ -1,17 +1,10 @@
-  <div class="hero">
-        <div class="hero-text">
-            <h1>Framtidens <br>mode,<span> idag</span>.</h1>
+<div class="hero">
+    <div class="hero-content">
+        <h1>Framtidens <br>mode,<span class="hero-accent"> idag</span>.</h1>
+
+        <div class="hero-buttons">
+            <button>Utforska</button>
+            <button>Shoppa Nyheter</button>
         </div>
-
-        <button>Utforska</button>
-        <button>Shoppa Nyheter</button>
-
-        <div class="hero-image">
-            <img src="/components/images/BG_motocross.png" alt="header-image">
-            </div>
-            
-
-            </div>
-        </div>
-        
     </div>
+</div>
