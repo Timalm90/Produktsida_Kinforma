@@ -1,13 +1,8 @@
-/* --- Hero imge and mountain illustration --- */
-main section {
-    padding: 2rem;
-}
 
 
 .header-text {
     z-index: 3;
 }
-
 
 
 h1 span{
@@ -34,20 +29,6 @@ color: #ffe48d;
     bottom: px;
     width: 100%;
     overflow: hidden;
-    display: block;
-}
-/* 
-.mountain-illustration {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-} */
-
-.mountain-illustration img {
-    width: 100%;
-    height: auto;
     display: block;
 }
 
@@ -115,6 +96,7 @@ button:hover {
 }
 
 @media screen and (min-width: 500px) {
+    
     
 
 }

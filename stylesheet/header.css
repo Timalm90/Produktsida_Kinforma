@@ -113,7 +113,7 @@
     display: flex;
     justify-content: center;
 }
-.header-text {
+.hero-text {
     position: absolute;
     top: 80px;
     margin: 2rem;
@@ -123,18 +123,18 @@
     width: 100%;
 }
 
-.header-text h1,
-.header-text p {
+.hero-text h1,
+.hero-text p {
     color: white;
     text-align: center;
 }
 
-.header-text h1 {
+.hero-text h1 {
     font-size: 24px;
     padding: 0.5rem;
 }
 
-.header-text p {
+.hero-text p {
     font-size: 12px;
     font-weight: 400;
 }
@@ -152,6 +152,7 @@
     left: 0;
     z-index: 10;
     transition: height 0.5s ease;
+    border-radius: 0px 0px 16px 16px;
 }
 
 /* Inner wrapper to offset menu content below header */
@@ -238,6 +239,6 @@ details p {
     height: 200px;
     width: 100vw;
     background: rgba(232, 232, 232, 0.444);
-    border-radius: 4px;
+    border-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
