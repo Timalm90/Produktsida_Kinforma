@@ -8,7 +8,7 @@
             rgba(0, 0, 0, 0.3) 50%,
             rgba(0, 0, 0, 0) 100%
         ),
-        url("/components/images/BG_motocross.png");
+        url("/components/images/BG_motocross.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
