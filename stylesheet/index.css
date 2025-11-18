@@ -1,4 +1,8 @@
 /* --- Hero imge and mountain illustration --- */
+main section {
+    padding: 2rem;
+}
+
 
 .header-text {
     z-index: 3;
