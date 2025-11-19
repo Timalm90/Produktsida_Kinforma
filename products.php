@@ -21,7 +21,7 @@
       </div>
 
       <div class="product-title">Fanny Pack</div>
-      <div class="product-price">$49</div>
+      <div class="product-price">249.00 sek</div>
     </div>
 
 
@@ -42,8 +42,8 @@
         <div class="swatch plus">+</div>
       </div>
 
-      <div class="product-title">Smart Watch</div>
-      <div class="product-price">$129</div>
+      <div class="product-title">Smartklocka</div>
+      <div class="product-price">999.00 sek</div>
     </div>
 
 
@@ -64,8 +64,8 @@
         <div class="swatch plus">+</div>
       </div>
 
-      <div class="product-title">Jacket</div>
-      <div class="product-price">$89</div>
+      <div class="product-title">Regnjacka</div>
+      <div class="product-price">399.00 sek</div>
     </div>
 
 
@@ -86,8 +86,8 @@
         <div class="swatch plus">+</div>
       </div>
 
-      <div class="product-title">Thermos</div>
-      <div class="product-price">$39</div>
+      <div class="product-title">Termos</div>
+      <div class="product-price">249.00 sek</div>
     </div>
 
   </div>

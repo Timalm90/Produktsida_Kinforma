@@ -36,9 +36,12 @@
 
 /* Main bubble area */
 .slide-container {
-  width: var(--bubble-size);
-  height: var(--bubble-size);
-  border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: var(--bubble-size);
+ height: var(--bubble-size);
+ border-radius: 50%;
 
  background: rgba(255, 255, 255, 0.42);
   box-shadow: 0 2px 2px rgba(112, 112, 112, 0.528);
@@ -47,7 +50,6 @@
   -webkit-backdrop-filter: blur(4.2px);
   border: 1px solid rgba(255, 255, 255, 0.635);
 
-  
   margin: 0 auto;
   overflow: hidden;
   position: relative; /* keeps contents inside circle */
@@ -56,8 +58,9 @@
 
 /* main image */
 .slide-img {
-  width: 100%;
-  height: 100%;
+  
+    width: 120%;
+  height: 120%;
   object-fit: contain;
   display: block;
   user-select: none;
@@ -104,7 +107,7 @@
 
 .arrow:hover {
     transform: translateY(-150%) scale(1.2);
-    filter: drop-shadow(0 0 0.75rem rgba(50, 50, 50, 0.452));
+    filter: drop-shadow(0 0 0.75rem rgba(230, 230, 230, 0.452));
 }
 
 /*Set Color of arrow while hovering */
@@ -138,10 +141,13 @@
   font-weight: 700;
 }
 
+
 /* Title & Price */
 .product-title,
 .product-price {
-  color: white;
+  color: rgb(0, 0, 0);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 200;
   margin-top: 8px;
   font-size: 1rem;
 }
