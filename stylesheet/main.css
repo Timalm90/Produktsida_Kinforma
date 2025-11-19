@@ -5,10 +5,13 @@
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+body {
+    background-color: #131313;
+}
+
 
 main section {
-    padding: 2rem;
-    background-color: #131313;
+    padding: 4vw;
 }
 
 

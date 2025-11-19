@@ -2,7 +2,6 @@ footer {
     /* text-align: center; */
     display: flex;
     flex-direction: column;
-
     padding: 2rem;
     /* margin: 1rem; */
 }
@@ -14,6 +13,7 @@ footer {
 .footer-om-oss a {
     display: flex;
     margin: 1rem 1rem 1rem 0;
+    filter: invert(1);
 }
 
 /* .footer-om-oss img {
@@ -34,6 +34,7 @@ footer {
     gap: 2rem;
     align-items: center;
     margin: 3rem 2rem 2.5rem 2rem;
+    filter: invert(1);
 }
 
 .language {
@@ -41,6 +42,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     margin: 0 2rem 3rem 2rem;
+    filter: invert(1);
 }
 
 .policy {
@@ -51,6 +53,7 @@ footer {
 
 .policy li {
    margin: 2rem;
+   filter: invert(1);
 }
 
 .footer-end {
@@ -60,8 +63,8 @@ footer {
 }
 
 .footer-end li {
-    
     margin: 2rem;
+    filter: invert(1);
  }
 
  footer br {
@@ -75,9 +78,11 @@ footer hr {
 .footer-end img {
     position: absolute;
     opacity: 10%;
-    width: 85vw;
+    width: 80vw;
     height: auto;
     padding-top: 1rem;
+    filter: invert(1);
+    /* bottom: 0; */
 }
 
 @media screen and (min-width: 500px) {
