@@ -1,49 +1,141 @@
+:root {
+  --bubble-size-desktop: min(18vw, 180px);
+  --bubble-size-mobile: min(35vw, 180px);
+}
+
+/* Gallery */
 .bubble-gallery {
-  position: relative;        /* allows the bg to position inside */
+  position: relative;
   display: grid;
   align-items: center;
   justify-items: center;
-  border-radius: 21px;
-  height: 80vh;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   padding: 1rem;
-  overflow: hidden;          /* ensures bg respects border-radius */
+  height: 80vh;
+  border-radius: 21px;
+  overflow: hidden;
 }
 
-/* Background layer */
+/* Background */
 .gallery-bg {
-  position: absolute;     /* sits behind the bubbles */
-  top: 0;
-  left: 0;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(/components/background-images/lines_background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Product container - positioning context for arrows */
+.product-bubble {
+  position: relative;
+  text-align: center;
+  --bubble-size: var(--bubble-size-desktop);
+}
+
+/* Main bubble area */
+.slide-container {
+  width: var(--bubble-size);
+  height: var(--bubble-size);
+  border-radius: 50%;
+  background: bisque;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; /* keeps contents inside circle */
+  touch-action: pan-y; /* allow horizontal pointer handling while enabling vertical scroll */
+}
+
+/* main image */
+.slide-img {
   width: 100%;
   height: 100%;
-
-  z-index: -1;            /* behind grid content */
-
-  background-image: url(/components/background-images/lines_background.jpg);
-  background-size: cover;    /* or 100% 100% if you want stretch */
-  background-position: center;
-  background-repeat: no-repeat;
+  object-fit: contain;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none; /* image should not swallow pointer events (container handles them) */
 }
 
-/* Bubbles */
-.bubble {
-  background-color: bisque;
-  width: min(18vw, 150px);
-  height: min(18vw, 150px);
+/* Arrows - positioned relative to .product-bubble for perfect symmetry */
+.arrow {
+  position: absolute;
+  top: calc(var(--bubble-size) / 2);
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(255,255,255,0.95);
+  
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 31, 31);
 }
 
-/* --- MOBILE (2 × 2) --- */
-@media (max-width: 580px) {
+/* left arrow */
+.arrow.prev {
+  left: calc(50% - (var(--bubble-size) / 2) - 20px);
+}
 
+/* right arrow */
+.arrow.next {
+  right: calc(50% - (var(--bubble-size) / 2) - 20px);
+}
+
+
+/* Swatches row */
+.swatches {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  flex: 0 0 22px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.swatch.plus {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Title & Price */
+.product-title,
+.product-price {
+  color: white;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 580px) {
   .bubble-gallery {
     grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
   }
+  .product-bubble { --bubble-size: var(--bubble-size-mobile); }
 
-  .bubble {
-    width: min(35vw, 180px);
-    height: min(35vw, 180px);
+  /* slightly closer arrows on mobile */
+  .arrow.prev {
+  left: calc(50% - (var(--bubble-size) / 2) - 20px);
+  }
+  .arrow.next {
+  right: calc(50% - (var(--bubble-size) / 2) - 20px);
   }
 }
