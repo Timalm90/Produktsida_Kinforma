@@ -2,15 +2,15 @@
     <div class="categories-wrapper">
         
         <div class="catagories-container">
-            
+
             <a href="#" class="catagories">
                 <img src="/components/images/skiing.png" alt="Skiing">
-                <span class="cat-title button-glass">Skiing</span>
+                <span class="cat-title button-glass">Skidor</span>
             </a>
 
             <a href="#" class="catagories">
                 <img src="/components/images/klättring.jpg" alt="Climbing">
-                <span class="cat-title button-glass">Climbing</span>
+                <span class="cat-title button-glass">Klättring</span>
             </a>
 
             <a href="#" class="catagories">

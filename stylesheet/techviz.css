@@ -19,8 +19,8 @@
 .techviz-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 1rem;
-    gap: 1rem;
+    padding: 3vw;
+    gap: 5vw;
 }
 
 .techviz-mini-text {
@@ -44,15 +44,17 @@
 }
 
 .techviz-botton {
-    width: 86px;
-    height: 35px;
+    width: 10vw;
+    min-width: 86px;
+    height: 3vw;
+    min-height: 35px;
     border-radius: 100px;
-    background-color: rgba(255, 255, 255, 0.12);
+    /* background-color: rgba(255, 255, 255, 0.12); */
     color: white;
     position: absolute;
     bottom: 0;
     left: 0;
-    margin: 1rem;
+    margin: 3vw;
 }
 
 .techviz-image {
@@ -65,17 +67,24 @@
     height: auto;
 }
 
+
+
 @media screen and (min-width: 700px) {
-    .techviz {
-        height: 50vh;
+    /* .techviz {
+        height: 80vh;
+    } */
+
+    .techviz-container {
+        padding: 5vw;
+        gap: 13vw;
     }
 
     .techviz-mini-text {
-        font-size: 20px;
+        font-size: 1rem;
      }
 
     .techviz-bold-text {
-        font-size: 30px;
+        font-size: 2.3rem;
     }
 
     .techviz-p {
@@ -83,8 +92,17 @@
     }
 
     .techviz-image img {
-        width: 70%;
+        margin-top: 5rem;
+        width: 100%;
         height: auto;
+        bottom: 0;
+    }
+
+    .techviz-botton {
+        width: 15vw;
+        height: 5.5vw;
+        margin: 5vw;
+        font-size: 1.1rem;
     }
 }
 
