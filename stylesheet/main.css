@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #131313;
+    background-color: var(--background-color);
 }
 
 
@@ -17,6 +17,7 @@ main section {
 
 
 :root {
+    --background-color: #131313;
     --sky-blue: #77BDDD;
     --aqua-blue: #63AAB6;
     --teal-green: #60BDB3;
