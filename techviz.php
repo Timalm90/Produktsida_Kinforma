@@ -1,11 +1,11 @@
 <section>
     <div class="techviz frosted-glass">
-        <img class="techviz-background-image" src="/components/background-images/dotted_background.jpg" alt="background">
+        <img class="techviz-background-image" src="/components/background-images/dotted_texture_final.jpg" alt="background">
         <div class="techviz-container">
             <div>
                 <p class="techviz-mini-text">Vårt hållbarhetsarbete</p>
                 <h4 class="techviz-bold-text">Regenerativ design möter modernt mode</h4>
-                <button class="techviz-botton">Läs mer</button>
+                <button class="techviz-botton button-glass">Läs mer</button>
             </div>
 
             <div>
