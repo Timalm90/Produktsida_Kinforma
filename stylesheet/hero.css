@@ -76,7 +76,7 @@
 }
 
 .hero-buttons button:hover {
-    background: rgba(255,255,255,0.35);
+    background: rgba(31, 31, 31, 0.166);
 }
 
 @media screen and (min-width:410px){
@@ -92,3 +92,12 @@
 }
 }
 
+
+
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  top: -300px;
+  width: 100vw;
+}

@@ -172,4 +172,10 @@ transform: translateY(-40px) scale(2);
   .arrow.next {
   right: calc(50% - (var(--bubble-size) / 2) - 20px);
   }
+/* Background */
+.gallery-bg {
+  background-image: url(/components/background-images/lines_background_standing.jpg);
 }
+
+}
+
