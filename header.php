@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/stylesheet/hero.css" />
   <link rel="stylesheet" href="stylesheet/products.css" />
   <link rel="stylesheet" href="stylesheet/techviz.css" />
+  <link rel="stylesheet" href="stylesheet/categories.css" />
   <link rel="stylesheet" href="/stylesheet/footer.css" />
 
 

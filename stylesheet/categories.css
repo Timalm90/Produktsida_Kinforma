@@ -1,0 +1,42 @@
+.catagories-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width: 100%; */
+    height: 55vh;
+    gap: 1.3rem;
+    
+}
+
+.catagories {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    /* width: 3vw;
+    height: 3vh; */
+}
+
+.catagories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Button-like label on top */
+.cat-title {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1.2rem;
+    color: white;
+    border-radius: 2rem;
+    font-weight: 600;
+    pointer-events: none; /* ensures entire element remains clickable */
+}
+
+
