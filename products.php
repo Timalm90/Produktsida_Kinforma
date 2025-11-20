@@ -6,7 +6,7 @@
     <!-- PRODUCT: FANNYPACK -->
     <div class="product-bubble" data-product="fannypack">
 
-      <div class="slide-container">
+      <div class="slide-container semi-frosted-glass">
          <img class="slide-img" src="/components/product-images/fannypack/Blue/1.png">
       </div>
 
@@ -27,7 +27,7 @@
 
     <!-- PRODUCT: SMARTWATCH -->
     <div class="product-bubble" data-product="smartwatch">
-      <div class="slide-container">
+      <div class="slide-container semi-frosted-glass">
           <img class="slide-img" src="/components/product-images/smartwatch/Blue/1.png">
         </div>
 
@@ -49,7 +49,7 @@
 
     <!-- PRODUCT: JACKET -->
     <div class="product-bubble" data-product="jacket">
-      <div class="slide-container">
+      <div class="slide-container semi-frosted-glass">
           <img class="slide-img" src="/components/product-images/jacket/Blue/1.png">
         </div>
         
@@ -71,7 +71,7 @@
 
     <!-- PRODUCT: THERMOS -->
     <div class="product-bubble" data-product="thermos">
-      <div class="slide-container">
+      <div class="slide-container semi-frosted-glass">
           <img class="slide-img" src="/components/product-images/thermos/Blue/1.png">
         </div>
         
