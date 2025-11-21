@@ -1,7 +1,7 @@
 <div class="hero">
 
-<!-- 
 
+<!-- 
 <video autoplay muted loop id="myVideo">
 <source src="/components/videos/fannypack_turntable_portrait_test.webm" type="video/webm">
 </video> -->

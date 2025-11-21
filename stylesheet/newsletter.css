@@ -1,11 +1,21 @@
 .news-container {
-
-    height: 40vh;
+    background-color: #47736A59;
+    border-radius: 21px;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
+}
+
+.bubble-block {
+    
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+flex-direction: column;
+padding: 10px;
 }
 
 
@@ -22,4 +32,19 @@
     object-fit: contain;
     /* object-fit: cover;   alternatively*/
     overflow: hidden;
+}
+
+.largeText{
+    position: absolute;
+
+    left: 200px;
+color: white;
+font-size: 4rem;
+
+} 
+
+.outer {
+    display: flex;
+    justify-content: center;
+    
 }
