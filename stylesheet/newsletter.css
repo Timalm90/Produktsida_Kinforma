@@ -1,28 +1,59 @@
 .news-container {
-    background-color: #47736A59;
+    background-image: url(/components/background-images/merch_background_final.jpg);
+    background-size: cover;
     border-radius: 21px;
     height: 80vh;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+    flex-direction: column;
     align-items: center;
 
 }
 
-.bubble-block {
-    
-    display: flex;
-    align-items: center;   
-    justify-content: space-between;
-flex-direction: column;
-padding: 10px;
+
+.news-container h3 {
+    padding-left: 5%;
+    color: white;
 }
+
+
+
+.upper-inner {
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-inner p {
+    width: 40%;
+    color: white;
+}
+
+.lower-inner {
+    display: flex;
+    padding: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lower-inner p {
+    width: 40%;
+    color: white;
+}
+
+
+
 
 
 .news-bubble {
     position: relative;
-    width: 20vw;
-    height: 20vw;
+    width: 35vw;
+    height: 35vw;
     border-radius: 50%;
 }
 
