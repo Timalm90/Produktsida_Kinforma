@@ -1,0 +1,80 @@
+.news-container {
+    background-image: url(/components/background-images/merch_background_final.jpg);
+    background-size: cover;
+    border-radius: 21px;
+    height: 80vh;
+    display: flex;
+
+    justify-content: space-around;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.news-container h3 {
+    padding-left: 5%;
+    color: white;
+}
+
+
+
+.upper-inner {
+    display: flex;
+    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.upper-inner p {
+    width: 40%;
+    color: white;
+}
+
+.lower-inner {
+    display: flex;
+    padding: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lower-inner p {
+    width: 40%;
+    color: white;
+}
+
+
+
+
+
+.news-bubble {
+    position: relative;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 50%;
+}
+
+.news-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* object-fit: cover;   alternatively*/
+    overflow: hidden;
+}
+
+.largeText{
+    position: absolute;
+
+    left: 200px;
+color: white;
+font-size: 4rem;
+
+} 
+
+.outer {
+    display: flex;
+    justify-content: center;
+    
+}

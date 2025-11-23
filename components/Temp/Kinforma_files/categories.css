@@ -1,0 +1,90 @@
+.categories-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.catagories-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* width: 100%; */
+    height: 55vh;
+    /* min-height: 448px;
+    min-height: 448px; */
+    gap: 1.3rem;
+}
+
+.catagories {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    /* width: 3vw;
+    height: 3vh; */
+}
+
+.catagories img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Button-like label on top */
+.cat-title {
+    position: absolute;
+    text-align: center;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1.2rem;
+    color: white;
+    border-radius: 2rem;
+    font-weight: 600;
+    pointer-events: none; /* ensures entire element remains clickable */
+}
+
+.compass-icon {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    max-width: 300px;
+    height: 20vw;
+    max-height: 300px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    z-index: 10;
+}
+
+.compass-icon img {
+    /* object-fit: cover;
+    object-position: center; */
+    width: 12vw;
+    max-width: 180px;
+}
+
+@media screen and (min-width: 700px) {
+    .catagories-container {
+        height: 130vh;
+        gap: 5rem;
+    }
+
+    .catagories:hover {
+        scale: 1.05;
+        transition: 0.3s;
+    }
+
+    .cat-title {
+        padding: 1rem 2.5rem;
+        font-size: 2rem;
+        border-radius: 5rem;
+        top: 5rem;
+    }
+}

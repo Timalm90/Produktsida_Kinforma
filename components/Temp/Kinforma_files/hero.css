@@ -1,0 +1,102 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.32) 0%,
+            rgba(0, 0, 0, 0.3) 50%,
+            rgb(13, 13, 13) 100%
+        ),
+        url("/components/images/BG_motocross.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    height: 75%;                 /* Keeps text high and gives room below */
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    /* Instead of perfect distribution, we control spacing manually */
+    justify-content: flex-start; /* Text stays near the top */
+    align-items: center;
+
+    padding-top: 1rem;
+    position: relative;
+}
+
+/* Push buttons upward slightly */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 30%;                 /* Adjust this to move buttons up/down */
+}
+
+/* Heading */
+.hero-content h1 {
+    font-size: clamp(2rem, 6vw, 4rem);  
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.hero-accent {
+    font-weight: 300;
+    color: #ffe48d;
+}
+
+/* Buttons */
+.hero-buttons button {
+    padding: 1.8rem 1.3rem;
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(150,150,150,0.06);
+    border: .5px solid white;
+    border-radius: 17px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    backdrop-filter: blur(4px);
+    transition: 0.2s;
+}
+
+.hero-buttons button:hover {
+    background: rgba(31, 31, 31, 0.166);
+}
+
+@media screen and (min-width:410px){
+    .hero-buttons button {
+        white-space: nowrap;
+        gap: 20%;
+        width: 150px;
+    }
+
+    .hero-buttons {
+    gap: 3rem;
+}
+}
+
+
+
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  top: -300px;
+  width: 100vw;
+}

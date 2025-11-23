@@ -48,7 +48,7 @@
     </div>
     
       <!-- Hidden Navigation Menu -->
-    <nav class="main-menu button-glass" id="mainMenu">
+    <nav class="main-menu menu-glass" id="mainMenu">
       <div class="menu-inner">
         <hr />
         <ul>
@@ -60,17 +60,14 @@
         </ul>
         <hr />
         <ul>
-          <details>
-            <summary><li><a href="#">Sortera efter produkt</a></li></summary>
-            <div class="dropdown"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nesciunt dolore omnis, impedit facere est nobis adipisci qui dolor sapiente sint ea alias cupiditate! Enim perspiciatis debitis ad illo quo!</p></div>
-          </details>
+
           <details>
             <summary><li><a href="#">Sortera efter aktivitet</a></li></summary>
-            <div class="dropdown"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus est soluta beatae unde explicabo tempore rerum sunt et asperiores non nihil tempora, ex obcaecati placeat corrupti odit hic sapiente atque?</p></div>
+            <div class="dropdown"><p>Skidor<br>Klättring<br>Surfing<br>Motocross</p></div>
           </details>
           <details>
             <summary><li><a href="#">Sortera efter kvalitet</a></li></summary>
-            <div class="dropdown"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, adipisci sint tempora iure unde molestias repellendus molestiae eum maiores excepturi tempore assumenda illum aut cumque, odio quibusdam nisi dolores voluptatum!</p></div>
+            <div class="dropdown"><p><strong>Material</strong><br><br>Bambu<br>Bomull<br>Hampa</p></div>
           </details>
         </ul>
         <hr />

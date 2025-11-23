@@ -1,0 +1,201 @@
+/* ===============================
+   Header Container & Logo
+=============================== */
+
+.header-container {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.s ease, opacity 0.5s ease;
+}
+.logo-header {
+    z-index: 1110;
+    height: 18px;
+    float: left;
+}
+
+.header-left {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Quick-actions */
+.header-right {
+    display: flex;
+    align-items: center;
+    filter: invert(1);
+}
+
+.header-right button {
+    background: none;
+    border: none;
+    padding: 0 0.6em;
+    cursor: pointer;
+}
+
+/* ===============================
+   Hamburger Menu
+=============================== */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+}
+
+.menu-toggle .bar {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger active (X shape + black bars) */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 4px);
+    background-color: #000000;
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -4px);
+    background-color: #000000;
+}
+
+/* ===============================
+   Image/Icon Inversion
+=============================== */
+/* Default: white */
+.header-container img {
+    filter: invert(1);
+    transition: filter 0.3s ease;
+}
+
+/* When menu is open: invert logo and quick-actions icons to black */
+.header-container.menu-open .logo-header,
+.header-container.menu-open .header-right img {
+    filter: invert(1);
+}
+
+
+
+/* ===============================
+   Main Menu
+=============================== */
+/* Main Menu (curtain effect, stretches to top) */
+.main-menu {
+    height: 0;               /* collapsed initially */
+    overflow: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;                  /* start at top of viewport */
+    left: 0;
+    z-index: 10;
+    transition: height 0.5s ease;
+    border-radius: 0px 0px 16px 16px;
+}
+
+/* Inner wrapper to offset menu content below header */
+.main-menu .menu-inner {
+    padding-top: 100px;      /* keep content below header */
+}
+
+/* When menu is active: fill full viewport */
+.main-menu.active {
+    height: 100vh;           /* full viewport height */
+}
+
+.main-menu li {
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.main-menu hr {
+    border: .5px solid rgb(128, 128, 128);
+    margin-top: 10px;
+}
+
+.main-menu p {
+    color: rgb(255, 255, 255);
+}
+
+/* ===============================
+   Dropdown / Details
+=============================== */
+details {
+    margin-block: 0.5rem;
+    padding-block: 0.5rem;
+    padding-right: 40px;
+}
+
+summary {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+}
+
+summary::before,
+summary::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 15px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+    transition: transform 0.1s ease-in;
+}
+
+summary::before {
+    transform: translateY(-5px) rotate(45deg);
+}
+
+summary::after {
+    transform: translateY(5px) rotate(-45deg);
+}
+
+details[open] summary::before {
+    transform: translateY(3px) rotate(45deg) translateX(0px);
+    width: 20px;
+    height: 3px;
+}
+
+details[open] summary::after {
+    transform: translateY(16px) rotate(-45deg) translateX(18px);
+    width: 20px;
+    height: 3px;
+}
+
+details p {
+    padding: 20px;
+}
+
+/* ===============================
+   Dropdown Glass Effect
+=============================== */
+.dropdown {
+    height: 200px;
+    width: 100vw;
+      background: rgb(146 146 146 / 6%);
+    box-shadow: -1px 8px 20px 20px rgba(0, 0, 0, 0.1);
+}

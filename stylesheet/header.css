@@ -14,6 +14,7 @@
     transition: background-color 0.s ease, opacity 0.5s ease;
 }
 .logo-header {
+    z-index: 1110;
     height: 18px;
     float: left;
 }
@@ -52,7 +53,7 @@
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 1100;
+    z-index: 100;
 }
 
 .menu-toggle .bar {
@@ -66,7 +67,7 @@
 /* Hamburger active (X shape + black bars) */
 .menu-toggle.active .bar:nth-child(1) {
     transform: rotate(45deg) translate(7px, 4px);
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .menu-toggle.active .bar:nth-child(2) {
@@ -75,7 +76,7 @@
 
 .menu-toggle.active .bar:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -4px);
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 /* ===============================
@@ -86,13 +87,6 @@
     filter: invert(1);
     transition: filter 0.3s ease;
 }
-
-/* When menu is open: invert logo and quick-actions icons to black */
-.header-container.menu-open .logo-header,
-.header-container.menu-open .header-right img {
-    filter: invert(0);
-}
-
 
 
 /* ===============================
@@ -108,20 +102,19 @@
     left: 0;
     z-index: 10;
     transition: height 0.5s ease;
-    border-radius: 0px 0px 16px 16px;
 }
 
-/* Inner wrapper to offset menu content below header */
 .main-menu .menu-inner {
-    padding-top: 100px;      /* keep content below header */
+    padding-top: 50px;    
+    margin: 20px;  
 }
 
-/* When menu is active: fill full viewport */
 .main-menu.active {
-    height: 100vh;           /* full viewport height */
+    height: 100vh;          
 }
 
 .main-menu li {
+    
     margin-bottom: 25px;
     margin-top: 10px;
     padding-left: 20px;
@@ -130,18 +123,17 @@
 .main-menu hr {
     border: .5px solid rgb(128, 128, 128);
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .main-menu p {
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* ===============================
    Dropdown / Details
 =============================== */
 details {
-    margin-block: 0.5rem;
-    padding-block: 0.5rem;
     padding-right: 40px;
 }
 
@@ -159,7 +151,7 @@ summary::after {
     right: 0;
     width: 15px;
     height: 3px;
-    background: black;
+    background: rgb(255, 255, 255);
     border-radius: 2px;
     transition: transform 0.1s ease-in;
 }
@@ -192,8 +184,8 @@ details p {
    Dropdown Glass Effect
 =============================== */
 .dropdown {
-    height: 200px;
+    height: 12  0px;
     width: 100vw;
-      background: rgb(146 146 146 / 6%);
-    box-shadow: -1px 8px 20px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(113, 113, 113, 0.255);
+
 }
