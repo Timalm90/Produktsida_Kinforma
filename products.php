@@ -1,5 +1,7 @@
 <section class="gallery-container">
+       <h1 class="product-heading">NYHETER</h1>
   <div class="bubble-gallery">
+ 
 
     <div class="gallery-bg"></div>
 
