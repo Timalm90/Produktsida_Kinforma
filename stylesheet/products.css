@@ -209,6 +209,16 @@ transform: scale(1.3);
   scale: 1.2;
   }
 
+.product-bubble:hover {
+
+transform: scale(1);
+margin: 0;
+}
+
+  .arrow {
+    top: 55%;
+  }
+
   .arrow.prev {
   left: calc(50% - (var(--bubble-size) / 2) - 20px);
   }

@@ -6,7 +6,7 @@
             180deg,
             rgba(0, 0, 0, 0.32) 0%,
             rgba(0, 0, 0, 0.3) 50%,
-            rgb(19, 19, 19) 95%
+            rgb(19, 19, 19  ) 95%
         ),
         url("/components/images/BG_surfing.png");
     background-size: cover;
