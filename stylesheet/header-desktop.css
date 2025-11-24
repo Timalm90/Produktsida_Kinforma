@@ -16,6 +16,7 @@
     height: 80%;
     gap: 10px;
     margin-right: 20px;
+    margin-left: 10px;
 
 }
 
@@ -30,12 +31,19 @@
 
 }
 
+
+.icon-desk {
+    max-width: 2vw;
+}
+
 .nav-left-desk a {
-    font-size: min(1vw, 14px);
+    font-size: min(1.5vw, 16px);
     font-weight: 700;
 }
 
-
+.search-desk{
+    max-width: 10vw;
+}
 
 .logo-header{
     height: 40px;
@@ -44,3 +52,14 @@
 .li {
 cursor: pointer;
 }
+
+
+@media screen and (max-width:766px){
+
+   .search-desk{
+    opacity: 0%;
+    max-width: 0px;
+} 
+
+}
+

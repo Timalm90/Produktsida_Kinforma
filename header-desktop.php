@@ -40,15 +40,16 @@
 <nav class="nav-right-desk">
  
       <button aria-label="Search">
-        <img src="components/icons/search.svg" alt="search-icon" />
+        <img src="components/icons/search.svg" alt="search-icon" class="icon-desk"/>
       </button>
-      <input type="text" name="Sök">      
+
+      <input type="text" name="Sök" class="search-desk" >      
       
       <button aria-label="Account">
-        <img src="components/icons/account.svg" alt="account-icon" />
+        <img src="components/icons/account.svg" alt="account-icon" class="icon-desk"/>
       </button>
       <button aria-label="Cart">
-        <img src="components/icons/cart.svg" alt="cart-icon" />
+        <img src="components/icons/cart.svg" alt="cart-icon" class="icon-desk"/>
       </button>
     </div>
 </nav>
