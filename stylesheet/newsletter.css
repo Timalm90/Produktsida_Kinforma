@@ -51,8 +51,8 @@
 
 .news-bubble {
     position: relative;
-    width: 35vw;
-    height: 35vw;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
 }
 
