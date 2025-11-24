@@ -14,11 +14,12 @@
   <link rel="stylesheet" href="stylesheet/categories.css" />
   <link rel="stylesheet" href="/stylesheet/newsletter.css" />
   <link rel="stylesheet" href="/stylesheet/footer.css" />
-
+  
 
 
   <title>Kinforma</title>
 </head>
+
 <body>
   <header>
   <div class="header-container">
@@ -78,5 +79,10 @@
     </nav>
   </div>
 
+ <div class="header-container-desktop">
+<?php 
+ require_once __DIR__ . "/header-desktop.php";?>
+ 
+ </div>
 </header>
-<script src="/javascript/hamburgerlogic.js"></script>
+

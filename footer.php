@@ -56,6 +56,9 @@
     </div>
 
 </footer>
-<script src="/javascript/index.js"></script>
+
+<script src="/javascript/hamburgerlogic.js"></script>
+<script src="/javascript/bubble-slideshow.js"></script>
+
 </body>
 </html>

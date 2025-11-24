@@ -1,0 +1,46 @@
+.header-container-desktop {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    height: 82px;
+}
+
+
+.nav-right-desk {
+
+    display: flex;
+    align-items: center;
+    height: 80%;
+    gap: 10px;
+    margin-right: 20px;
+
+}
+
+.nav-left-desk {
+    width: 70vw;
+    display: flex;
+    height: 70%;
+    align-items: center;
+    gap: 3%;
+    margin-left: 20px;
+    white-space: nowrap;
+
+}
+
+.nav-left-desk a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+.logo-header{
+    height: 40px;
+}
+
+.li {
+cursor: pointer;
+}

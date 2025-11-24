@@ -43,7 +43,7 @@ button {
 
 hr {
     color: #AAAAAA;
-    width: 90vw;
+    width: 100%;
     border-width: 1.5px;
     margin: auto;
 }
@@ -80,6 +80,19 @@ hr {
 
 }
 
+.menu-glass-desk {
+
+    
+    background: rgba(213, 213, 213, 0.098);
+    box-shadow: -6px -4px 30px 3px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset 0px 0px 11px 5px rgba(254, 254, 254, 0.25), inset -9px -20px 18px 20px rgba(0, 0, 0, 0.17);
+    position: relative;
+    margin: 20 auto;
+    touch-action: pan-y;
+
+}
 
 
 .button-glass {

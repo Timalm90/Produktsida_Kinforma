@@ -95,4 +95,3 @@
   </div>
 </section>
 
-<script src="/javascript/bubble-slideshow.js"></script>
