@@ -8,7 +8,7 @@
             rgba(0, 0, 0, 0.3) 50%,
             rgb(13, 13, 13) 100%
         ),
-        url("/components/images/BG_motocross.jpg");
+        url("/components/images/BG_surfing.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
     display: flex;
     gap: 1rem;
     position: absolute;
-    bottom: 30%;                 /* Adjust this to move buttons up/down */
+    bottom: 15%;                 /* Adjust this to move buttons up/down */
 }
 
 /* Heading */
