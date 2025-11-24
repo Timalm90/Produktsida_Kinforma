@@ -35,6 +35,12 @@
     position: relative;
 }
 
+.hero-content p {
+    position: absolute;
+    bottom: 0%;  
+    text-align: center;
+}
+
 /* Push buttons upward slightly */
 .hero-buttons {
     display: flex;
@@ -88,7 +94,7 @@
 
     .hero-buttons {
     gap: 3rem;
-}
+    }
 }
 
 

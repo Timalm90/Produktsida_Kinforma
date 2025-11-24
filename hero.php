@@ -13,5 +13,6 @@
             <button class="button-glass">Utforska</button>
             <button class="button-glass">Shoppa Nyheter</button>
         </div>
+        <p>Upplev en ny dimension av mode – designad av dig, driven av teknik, skapad för planeten.</p>
     </div>
 </div>
