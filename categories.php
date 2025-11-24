@@ -4,17 +4,17 @@
         <div class="catagories-container">
 
             <a href="#" class="catagories">
-                <img src="/components/images/skiing.png" alt="Skiing">
+                <img src="/components/images/skiing_3.png" alt="Skiing">
                 <span class="cat-title button-glass">Skidor</span>
             </a>
 
             <a href="#" class="catagories">
-                <img src="/components/images/klättring.jpg" alt="Climbing">
+                <img src="/components/images/climbing_klocka_2.png" alt="Climbing">
                 <span class="cat-title button-glass">Klättring</span>
             </a>
 
             <a href="#" class="catagories">
-                <img src="/components/images/surfing_2.jpg" alt="Surfing">
+                <img class="img-surfing" src="/components/images/surfing_3_2.png" alt="Surfing">
                 <span class="cat-title button-glass">Surfing</span>
             </a>
 
