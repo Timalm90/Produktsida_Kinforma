@@ -31,7 +31,7 @@
 }
 
 .nav-left-desk a {
-    font-size: 14px;
+    font-size: min(1vw, 14px);
     font-weight: 700;
 }
 
