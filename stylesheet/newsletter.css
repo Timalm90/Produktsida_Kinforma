@@ -16,7 +16,7 @@ margin-bottom: 1vh;
 
 
 .reg-textblock h3 {
-    font-size: 24;
+    font-size: 200;
     font-weight: 400;
     color: white;
     letter-spacing: -0.08px;
@@ -232,6 +232,13 @@ font-size: 4rem;
 .news-bubble {
 scale: .6;
 min-width: 60vh;
+}
+
+.registration-container {
+
+width: 70%;
+
+
 }
 
 }

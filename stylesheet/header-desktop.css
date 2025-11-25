@@ -31,6 +31,13 @@
 
 }
 
+.nav-left-desk a {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+}
 
 .icon-desk {
     max-width: 2vw;
@@ -59,12 +66,33 @@ cursor: pointer;
 }
 
 
-@media screen and (max-width:766px){
+@media screen and (max-width:1200px){
 
    .search-desk{
     opacity: 0%;
     max-width: 0px;
 } 
+    .nav-left-desk{
+        margin: 0;
+        max-width: 50%;
+    }
+    
+ .nav-left-desk a{
+    padding: 0;
+    margin: 0;
+        max-width: 50%;
+    }
+    .nav-right-desk {
+        max-width: 10vw;
+        gap: max(1vw);
+    }
+
+    .logo-header {
+        margin: 0;
+        padding: 0;
+        scale: 0.6;
+    }
+
 
 }
 
