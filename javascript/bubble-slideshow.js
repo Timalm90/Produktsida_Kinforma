@@ -4,21 +4,19 @@ document.querySelectorAll(".product-bubble").forEach(bubble => {
   const container = bubble.querySelector(".slide-container");
 
   const colors = ["Blue", "Green", "Sand"];
-  let currentColor = "Blue";
+  // Pick a random initial color for this bubble
+  let currentColor = colors[Math.floor(Math.random() * colors.length)];
   let currentIndex = 1;
   const maxIndex = 5;
 
   img.draggable = false;
 
-  /* -----------------------------
-     FADE TRANSITION CONTROLLER
-  --------------------------------*/
   const fadeImage = () => {
     img.classList.add("fade-out");
 
     setTimeout(() => {
       img.src = `/components/product-images/${product}/${currentColor}/${currentIndex}.png`;
-    }, 150);
+    }, 50);
 
     img.onload = () => {
       img.classList.remove("fade-out");
@@ -53,7 +51,6 @@ document.querySelectorAll(".product-bubble").forEach(bubble => {
         swatch.classList.add("active");
 
         currentColor = color;
-        currentIndex = 1;
         updateImage();
       });
     }

@@ -102,8 +102,8 @@
             <div class="divider" aria-hidden="true"></div>
 
             <div class="dropdown-right-col">
-              <h4>2025 Vinterkollektion</h4></br>
-              <h4>TikTok Favs</h4></br>
+              <h4>2025 Vinterkollektion</h4>
+              <h4>TikTok Favs</h4>
               <h4>Kids edition</h4>
             </div>
           </div>

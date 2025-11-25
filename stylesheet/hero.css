@@ -17,7 +17,8 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    z-index: -2;
+    /* Remove negative z-index */
+    z-index: 0;
 }
 
 
@@ -44,7 +45,7 @@
         rgb(19, 19, 19) 85%
     );
     z-index: 1; /* overlay above video */
-    pointer-events: none;
+    pointer-events: none; /* allows clicks through to buttons */
 }
 
 
@@ -55,18 +56,17 @@
 }
 
 
-
 .hero-content {
     width: 100%;
     max-width: 800px;
-    height: 75%;                 /* Keeps text high and gives room below */
+    height: 75%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
     align-items: center;
-
     position: relative;
+    z-index: 2; /* make content above video & overlay */
 }
 
 .hero-content p {
@@ -82,6 +82,8 @@
     position: absolute;
     bottom: -75%;                 /* Adjust this to move buttons up/down */
 }
+
+
 
 /* Heading */
 .hero-content h1 {
@@ -112,11 +114,13 @@
     cursor: pointer;
     font-size: 18px;
     backdrop-filter: blur(4px);
-    transition: 0.2s;
+    transition: 0.2s ease-in-out;
 }
 
 .hero-buttons button:hover {
-    background: rgba(31, 31, 31, 0.166);
+     scale: 1.05;
+        cursor: pointer;
+        font-size: 20px;
 }
 
 @media screen and (max-width:1100px){
@@ -216,5 +220,16 @@ margin-top: -200px;
     .header-icons img {
         width: clamp(32px, 2.8vw, 60px);
     }
+
+    .hero-buttons {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    position: absolute;
+    bottom: -5%;               
+}
+
+
 }
 

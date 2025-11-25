@@ -147,17 +147,17 @@
 
     /* expanding glass */
     .menu-glass-desk {
-        background: rgba(70, 70, 70, 0.50);
+        background: rgba(178, 178, 178, 0.5);
         -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
     }
 
     /* HEADER EXPANDS DOWNWARD ON HOVER */
     #desktopHeader:hover {
-        height: 350px; /* Adjust to match dropdown content height */
+        height: 300px; /* Adjust to match dropdown content height */
         justify-content: space-between;
         align-items: start;
-        padding-bottom: 200px;
+        padding-bottom: 150px;
     }
 
     /* left section */
@@ -388,9 +388,9 @@ details[open] summary::after {
 .bglist {
     position: relative;
     left: 0;
-    padding: 10px;
     margin: 10px;
     width: 100%;
+    gap: -10px;
 
     background-color: #00000052;
 }
