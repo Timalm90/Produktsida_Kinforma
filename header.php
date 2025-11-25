@@ -24,7 +24,7 @@
     <!-- =======================
          MOBILE HEADER (visible <768px)
          ======================= -->
-    <div class="header-container menu-glass" id="mobileHeader" role="banner" aria-hidden="false">
+    <div class="header-container" id="mobileHeader" role="banner" aria-hidden="false">
       <div class="header-left">
         <!-- Hamburger Menu -->
         <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainMenu">
@@ -67,11 +67,11 @@
           <ul>
             <details>
               <summary><li><a href="#">Sortera efter aktivitet</a></li></summary>
-              <div class="dropdown menu-glass-desk"><p>Skidor<br>Klättring<br>Surfing<br>Motocross</p></div>
+              <div class="dropdown bglist"><p>Skidor<br>Klättring<br>Surfing<br>Motocross</p></div>
             </details>
             <details>
               <summary><li><a href="#">Sortera efter kvalitet</a></li></summary>
-              <div class="dropdown menu-glass-desk"><p><strong>Material</strong><br><br>Bambu<br>Bomull<br>Hampa</p></div>
+              <div class="dropdown bglist"><p><strong>Material</strong><br><br>Bambu<br>Bomull<br>Hampa</p></div>
             </details>
           </ul>
           <hr />

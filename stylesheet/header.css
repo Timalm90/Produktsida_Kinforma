@@ -75,13 +75,13 @@
   transition: all 0.3s ease;
 }
 .menu-toggle.active .bar:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 4px);
+  transform: rotate(45deg) translate(7px, 7px);
 }
 .menu-toggle.active .bar:nth-child(2) {
   opacity: 0;
 }
 .menu-toggle.active .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -4px);
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .main-menu {
@@ -329,4 +329,68 @@
     #mobileHeader {
         display: none !important;
     }
+}
+
+
+sHTML CSSResult Skip Results Iframe
+EDIT ON
+/* Light styling for presentation */
+details {
+  border-block-end: 1px solid #000;
+  margin-block: .5rem;
+  padding-block: .5rem;
+}
+
+
+
+
+
+summary {
+  list-style: none;             /* Hide default marker */
+  position: relative;
+  padding-left: 1.5rem;         /* Space for the custom arrow */
+  cursor: pointer;
+}
+
+/* Lines forming the arrow */
+summary::before,
+summary::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;                       /* Start near left edge of padding */
+  width: 0.6rem;                 /* Length of the line */
+  height: 2px;                    /* Thickness of the line */
+  background-color: white;
+  transform-origin: left center;  /* Rotate around the left end for a sharper arrow */
+  transition: transform 0.3s ease;
+}
+
+/* Initial ">" orientation: right-facing */
+summary::before {
+  transform: rotate(-30deg) translateY(1px);
+}
+
+summary::after {
+  transform: rotate(30deg) translateY(-1px);
+}
+
+/* When open: rotate to "^" (up arrow) */
+details[open] summary::before {
+  transform: rotate(45deg) translatex(0);
+}
+
+details[open] summary::after {
+  transform: rotate(-45deg) translateY(0);
+}
+
+
+.bglist {
+    position: relative;
+    left: 0;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+
+    background-color: #00000052;
 }
