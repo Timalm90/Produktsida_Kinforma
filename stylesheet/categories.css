@@ -32,6 +32,7 @@
     object-position: center;
 }
 
+
 /* Button-like label on top */
 .cat-title {
     position: absolute;
@@ -76,9 +77,12 @@
         gap: 5rem;
     }
 
+    .catagories {
+        transition: 0.3s ease-in-out;
+    }
+
     .catagories:hover {
         scale: 1.05;
-        transition: 0.3s;
     }
 
     .cat-title {
