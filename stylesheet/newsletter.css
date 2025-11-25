@@ -185,9 +185,10 @@ font-size: 4rem;
     .content-container {
         display: flex;
         justify-content: center;
-        width: 100%;
         height: 1200px;
         padding: 0;
+        margin: 0 auto;
+        width: 70%;
     }
 
 
@@ -233,5 +234,12 @@ font-size: 4rem;
 scale: .6;
 min-width: 60vh;
 }
+
+.registration-container {
+    margin: 0 auto;
+    width: 70%;
+    padding-bottom: 2rem;
+}
+
 
 }

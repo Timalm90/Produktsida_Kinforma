@@ -49,11 +49,8 @@
             </p></li>
             <li><p>Tel: +46 8 54522901</p></li>
         </ul>
-        <img src="/components/logo/Kinforma_main_logo.png" alt="logo">
-        
-        
-
     </div>
+    <img class="logo-footer" src="/components/logo/logo_svart_kinforma.png" alt="logo">
 
 </footer>
 
