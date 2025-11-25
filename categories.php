@@ -9,7 +9,7 @@
             </a>
 
             <a href="#" class="catagories">
-                <img src="/components/images/climbing_klocka_2.png" alt="Climbing">
+                <img src="/components/images/climbing.png" alt="Climbing">
                 <span class="cat-title button-glass">Klättring</span>
             </a>
 
@@ -19,7 +19,7 @@
             </a>
 
             <a href="#" class="catagories">
-                <img src="/components/images/motokross_2.png" alt="Motocross">
+                <img src="/components/images/motokross_klocka.png" alt="Motocross">
                 <span class="cat-title button-glass">Motocross</span>
             </a>
 
