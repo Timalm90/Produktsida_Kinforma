@@ -95,16 +95,15 @@
         <div class="nav-item">
           <a href="#" class="nav-link">Nyheter</a>
 
-          <div class="dropdown menu-glass-desk" aria-hidden="true">
+          <div class="dropdown" aria-hidden="true">
             <div class="dropdown-left">
-              <h3>Nyheter</h3>
             </div>
 
             <div class="divider" aria-hidden="true"></div>
 
-            <div class="dropdown-right">
-              <h4>2025 Vinterkollektion</h4>
-              <h4>TikTok Favs</h4>
+            <div class="dropdown-right-col">
+              <h4>2025 Vinterkollektion</h4></br>
+              <h4>TikTok Favs</h4></br>
               <h4>Kids edition</h4>
             </div>
           </div>
@@ -114,9 +113,8 @@
         <div class="nav-item">
           <a href="#" class="nav-link">Kläder</a>
 
-          <div class="dropdown dropdown-menu-glass-desk" aria-hidden="true">
+          <div class="dropdown" aria-hidden="true">
             <div class="dropdown-left">
-              <h3>Kläder</h3>
             </div>
 
             <div class="divider" aria-hidden="true"></div>
@@ -143,9 +141,8 @@
         <div class="nav-item">
           <a href="#" class="nav-link">Accessoarer</a>
 
-          <div class="dropdown dropdown-menu-glass-desk" aria-hidden="true">
+          <div class="dropdown" aria-hidden="true">
             <div class="dropdown-left">
-              <h3>Accessoarer</h3>
             </div>
 
             <div class="divider" aria-hidden="true"></div>
@@ -172,14 +169,13 @@
         <div class="nav-item">
           <a href="#" class="nav-link">Limited edition</a>
 
-          <div class="dropdown dropdown-menu-glass-desk" aria-hidden="true">
+          <div class="dropdown" aria-hidden="true">
             <div class="dropdown-left">
-              <h3>Limited Edition</h3>
             </div>
 
             <div class="divider" aria-hidden="true"></div>
 
-            <div class="dropdown-right">
+            <div class="dropdown-right-col">
               <h4>Medlemsförmåner</h4>
               <p>Kläder</p>
               <p>Accessoarer</p>
