@@ -1,193 +1,374 @@
 
 
+/* ===============================
+   HEADER.CSS (merged mobile-first + desktop)
+   Desktop original rules preserved from /mnt/data/header-desktop.css
+   Dropdown added (Option A)
+   =============================== */
+
+/* -----------------------
+   BASE VARIABLES
+   ----------------------- */
+:root {
+    --header-height: 82px;
+    --divider: #555;
+    --white: #fff;
+    --muted: #dedede;
+}
 
 /* ===============================
-   Header Container & Logo
-=============================== */
+   MOBILE (default) - original mobile header behavior
+   =============================== */
 
+/* mobile header container (keeps your mobile look) */
 .header-container {
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    z-index: 20;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: background-color 0.s ease, opacity 0.5s ease;
-}
-.logo-header {
-    z-index: 1110;
-    height: 18px;
-    float: left;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s ease, opacity 0.3s ease;
+  top: 0;
 }
 
+/* Use your existing glass style from main.css (.menu-glass) */
+
+/* left area and mobile logo */
 .header-left {
-    width: 170px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
-/* Quick-actions */
+/* Mobile logo size (same as your earlier mobile header) */
+.header-logo .logo-header,
+.logo .logo-header {
+  margin-left: 50px;
+  width: 60%;
+  display: block;
+  filter: invert(1);
+}
+
+/* header icons (mobile) */
 .header-right {
-    display: flex;
-    align-items: center;
-    filter: invert(1);
+  display: flex;
+  align-items: center;
+  filter: invert(0);
+  gap: 8px;
 }
-
 .header-right button {
-    background: none;
-    border: none;
-    padding: 0 0.6em;
-    cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0 0.4em;
+  cursor: pointer;
 }
 
-/* ===============================
-   Hamburger Menu
-=============================== */
+/* hamburger button — ensure top layer so it doesn't hide behind logo */
 .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 150px;
+  height: 23px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 3000; /* high so always above logo */
 }
-
 .menu-toggle .bar {
-    height: 2px;
-    width: 100%;
-    background-color: #ffffff;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+  height: 2px;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
-
-/* Hamburger active (X shape + black bars) */
 .menu-toggle.active .bar:nth-child(1) {
-    transform: rotate(45deg) translate(7px, 4px);
-    background-color: #ffffff;
+  transform: rotate(45deg) translate(7px, 4px);
 }
-
 .menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
-
 .menu-toggle.active .bar:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -4px);
-    background-color: #ffffff;
+  transform: rotate(-45deg) translate(7px, -4px);
 }
 
-/* ===============================
-   Image/Icon Inversion
-=============================== */
-/* Default: white */
-.header-container img {
-    filter: invert(1);
-    transition: filter 0.3s ease;
-}
-
-/* ===============================
-   Main Menu
-=============================== */
-/* Main Menu (curtain effect, stretches to top) */
+/* mobile full-screen menu */
 .main-menu {
-    height: 0;               /* collapsed initially */
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
-    top: 0;                  /* start at top of viewport */
-    left: 0;
-    z-index: 10;
-    transition: height 0.5s ease;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2050;
+  transition: height 0.45s ease;
 }
-
 .main-menu .menu-inner {
-    padding-top: 50px;    
-    margin: 20px;  
+  padding-top: 50px;
+  margin: 20px;
 }
-
 .main-menu.active {
-    height: 100vh;          
+  height: 100vh;
 }
-
+.main-menu ul {
+  list-style: none;
+  padding-left: 0;
+}
 .main-menu li {
-    
-    margin-bottom: 25px;
-    margin-top: 10px;
-    padding-left: 20px;
+  margin-bottom: 18px;
+  padding-left: 6px;
 }
-
 .main-menu hr {
-    border: .5px solid rgb(128, 128, 128);
-    margin-top: 10px;
-    margin-bottom: 20px;
+  border: .5px solid rgb(128, 128, 128);
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.main-menu p {
-    color: rgb(255, 255, 255);
-}
+/* small util */
+.icon-btn { background: none; border: none; padding: 0; cursor: pointer; }
+.no-scroll { overflow: hidden; }
 
 /* ===============================
-   Dropdown / Details
-=============================== */
-details {
-    padding-right: 40px;
-}
+   DESKTOP (>=768px) — original desktop CSS preserved
+   =============================== */
+@media screen and (min-width:768px) {
 
-summary {
-    position: relative;
+    /* Hide mobile header pieces */
+    .header-container { display: none; }
+    .main-menu { display: none; }
+
+    /* ---------- original desktop CSS from uploaded file (preserved) ---------- */
+
+    .header-container-desktop {
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        width: 100%;
+        height: 82px;
+    }
+
+
+    .nav-right-desk {
+
+        display: flex;
+        align-items: center;
+        height: 80%;
+        gap: 10px;
+        margin-right: 20px;
+        margin-left: 10px;
+
+    }
+
+    .nav-left-desk {
+        width: 70vw;
+        display: flex;
+        height: 70%;
+        align-items: center;
+        gap: 3%;
+        margin-left: min(10vw, 40px);
+        white-space: nowrap;
+
+    }
+
+    .nav-left-desk a {
+
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .icon-desk {
+        max-width: 2vw;
+    }
+
+    .nav-left-desk a {
+        font-size: min(1.5vw, 16px);
+        font-weight: 700;
+    }
+
+    .search-desk{
+        max-width: 10vw;
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+
+    .logo-header{
+        height: 40px;
+        margin-right: 1vw;
+    }
+
+    .li {
     cursor: pointer;
-    list-style: none;
+    }
+
+
+    @media screen and (max-width:1200px){
+
+       .search-desk{
+        opacity: 0%;
+        max-width: 0px;
+    } 
+        .nav-left-desk{
+            margin: 0;
+            max-width: 50%;
+        }
+        
+     .nav-left-desk a{
+        padding: 0;
+        margin: 0;
+            max-width: 50%;
+        }
+        .nav-right-desk {
+            max-width: 10vw;
+            gap: max(1vw);
+        }
+
+        .logo-header {
+            margin: 0;
+            padding: 0;
+            scale: 0.6;
+        }
+
+
+    }
+
+    /* ---------- end of original desktop CSS ---------- */
+
+    /* ensure menu-glass-desk is visible on desktop and above content */
+    .menu-glass-desk {
+        z-index: 1010; /* above header z-index:10, above content but below full UI layers if needed */
+        pointer-events: auto;
+    }
+
+    /* ------------------------
+       DROPDOWN (Option A) appended without changing original desktop CSS
+       ------------------------ */
+
+    .nav-item {
+        position: relative;
+    }
+
+    .dropdown {
+        position: fixed;
+        left: 0;
+        top: 82px; /* keep the same as your header height */
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: #111; /* dark fallback */
+        color: white;
+
+        display: flex;
+        opacity: 0;
+
+        transition: height 0.35s ease, opacity 0.35s ease;
+        z-index: 1005;
+        pointer-events: none;
+    }
+
+    /* Use your menu-glass-desk glass look when class is present */
+    .dropdown.menu-glass-desk {
+        /* main.css contains the glass visuals; ensure fallback for browsers */
+        background: rgba(213, 213, 213, 0.098);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 11px 5px rgba(12,12,12,0.42), inset -9px -20px 18px 20px rgba(0,0,0,0.17);
+        border-top: 1px solid rgba(255,255,255,0.06);
+        color: white;
+    }
+
+    /* Hover triggers dropdown expansion */
+    .nav-item:hover .dropdown {
+        height: 50vh;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Dropdown layout (matching the brief) */
+    .dropdown-left,
+    .dropdown-right {
+        padding: 40px;
+    }
+
+    .dropdown-left {
+        width: 25%;
+    }
+
+    .dropdown-right {
+        width: 75%;
+    }
+
+    .two-cols {
+        display: flex;
+        gap: 80px;
+    }
+
+    /* Vertical divider */
+    .divider {
+        width: 1px;
+        background: #555;
+        height: 100%;
+    }
+
+    /* Text styling (hover/interaction) */
+    .dropdown h3, .dropdown h4 {
+        margin-bottom: 20px;
+    }
+
+    .dropdown p, .dropdown h4 {
+        cursor: pointer;
+    }
+
+    .dropdown p:hover,
+    .dropdown h4:hover {
+        color: #dedede;
+        transform: translateX(4px);
+        transition: 0.2s;
+    }
+
+} /* end media >=768px */
+
+/* ------------------------
+   tweak for very large screens
+   ------------------------ */
+@media screen and (min-width:1400px) {
+    .dropdown-left { padding-left: 6vw; }
+    .dropdown-right { padding-right: 6vw; }
 }
 
-summary::before,
-summary::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 15px;
-    height: 3px;
-    background: rgb(255, 255, 255);
-    border-radius: 2px;
-    transition: transform 0.1s ease-in;
+
+
+/* =====================================================
+   FINAL FIX — Hide desktop header on mobile completely
+   ===================================================== */
+
+#desktopHeader {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
-summary::before {
-    transform: translateY(-5px) rotate(45deg);
-}
+@media screen and (min-width: 768px) {
+    #desktopHeader {
+        display: flex !important;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
 
-summary::after {
-    transform: translateY(5px) rotate(-45deg);
-}
-
-details[open] summary::before {
-    transform: translateY(3px) rotate(45deg) translateX(0px);
-    width: 20px;
-    height: 3px;
-}
-
-details[open] summary::after {
-    transform: translateY(16px) rotate(-45deg) translateX(18px);
-    width: 20px;
-    height: 3px;
-}
-
-details p {
-    padding: 20px;
-}
-
-/* ===============================
-   Dropdown Glass Effect
-=============================== */
-.dropdown {
-    height: 12  0px;
-    width: 100vw;
-    background: rgba(113, 113, 113, 0.255);
-
+    #mobileHeader {
+        display: none !important;
+    }
 }

@@ -180,5 +180,26 @@ margin-top: -200px;
 }
 
 
+/* === ICON SCALING (mobile default) === */
+.header-logo img,
+.header-icons img {
+    width: clamp(20px, 5vw, 38px);
+    height: auto;
+}
 
+/* === Tablet breakpoint === */
+@media screen and (min-width: 600px) {
+    .header-logo img,
+    .header-icons img {
+        width: clamp(28px, 4vw, 48px);
+    }
+}
+
+/* === Desktop breakpoint === */
+@media screen and (min-width: 1024px) {
+    .header-logo img,
+    .header-icons img {
+        width: clamp(32px, 2.8vw, 60px);
+    }
+}
 
