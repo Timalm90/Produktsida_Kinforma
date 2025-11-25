@@ -67,11 +67,11 @@
           <ul>
             <details>
               <summary><li><a href="#">Sortera efter aktivitet</a></li></summary>
-              <div class="dropdown"><p>Skidor<br>Klättring<br>Surfing<br>Motocross</p></div>
+              <div class="dropdown menu-glass-desk"><p>Skidor<br>Klättring<br>Surfing<br>Motocross</p></div>
             </details>
             <details>
               <summary><li><a href="#">Sortera efter kvalitet</a></li></summary>
-              <div class="dropdown"><p><strong>Material</strong><br><br>Bambu<br>Bomull<br>Hampa</p></div>
+              <div class="dropdown menu-glass-desk"><p><strong>Material</strong><br><br>Bambu<br>Bomull<br>Hampa</p></div>
             </details>
           </ul>
           <hr />
@@ -114,14 +114,14 @@
         <div class="nav-item">
           <a href="#" class="nav-link">Kläder</a>
 
-          <div class="dropdown menu-glass-desk" aria-hidden="true">
+          <div class="dropdown dropdown-menu-glass-desk" aria-hidden="true">
             <div class="dropdown-left">
               <h3>Kläder</h3>
             </div>
 
             <div class="divider" aria-hidden="true"></div>
 
-            <div class="dropdown-right two-cols">
+            <div class="dropdown-right two-col">
               <div>
                 <h4>Kön</h4>
                 <p>Kvinnor</p>
@@ -143,7 +143,7 @@
         <div class="nav-item">
           <a href="#" class="nav-link">Accessoarer</a>
 
-          <div class="dropdown menu-glass-desk" aria-hidden="true">
+          <div class="dropdown dropdown-menu-glass-desk" aria-hidden="true">
             <div class="dropdown-left">
               <h3>Accessoarer</h3>
             </div>
@@ -172,7 +172,7 @@
         <div class="nav-item">
           <a href="#" class="nav-link">Limited edition</a>
 
-          <div class="dropdown menu-glass-desk" aria-hidden="true">
+          <div class="dropdown dropdown-menu-glass-desk" aria-hidden="true">
             <div class="dropdown-left">
               <h3>Limited Edition</h3>
             </div>
