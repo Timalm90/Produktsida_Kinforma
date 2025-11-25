@@ -24,7 +24,7 @@
     <div class="content-container">
 
         <div class="upper">
-            <h3>Vad du kan få som medlem?</h3>
+            <h3>Vad du kan få som medlem</h3>
             <div class="upper-inner">
                 <p>Som medlem får du
                     en gratis kabin-nyckelring
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <hr>
+        <hr class="content-divider">
 
         <div class="lower">
             <h3>Som medlem har du tillgång till limited edition</h3>

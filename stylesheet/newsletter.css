@@ -71,9 +71,9 @@ cursor: pointer;
     background-image: url(/components/background-images/merch_background_final.jpg);
     background-size: cover;
     border-radius: 21px;
-    height: 80vh;
+    height: 60vh;
     display: flex;
-
+    border: .1rem solid rgba(255, 255, 255, 0.228);
     justify-content: space-around;
     padding-top: 10%;
     padding-bottom: 10%;
@@ -115,12 +115,25 @@ cursor: pointer;
     color: white;
 }
 
+.lower h3 {
+    margin-top: 20px;
+    
+}
+
+
+
+.upper-inner, .lower-inner {
+
+    /* height: max(40%); */
+}
+
+
 
 
 .news-bubble {
     position: relative;
     width: 50%;
-    height: 50%;
+    /* height: 50%; */
     border-radius: 50%;
 }
 
@@ -151,4 +164,75 @@ font-size: 4rem;
 
 
 
-   
+/* ipad / transition point between phone and deskotp */
+@media screen and (min-width: 440px) {
+
+    .content-container {
+       
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 700px;
+        padding: 0;
+    }
+}
+
+
+
+/* Desktop */
+@media screen and (min-width: 700px) {
+
+    .content-container {
+       
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 1200px;
+        padding: 0;
+    }
+
+
+.content-divider{
+    height: 0;
+
+}
+
+.upper, .lower {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 100%;
+    height: 50%;
+}
+
+.upper h3, .lower h3 {
+    padding-top: 30px;
+    font-size: min(2.3rem, 3vw);
+    transform: translateY(40px);
+ 
+}
+
+.upper p, .lower p {
+    padding: 40px;
+    font-size: 20px;
+ 
+}
+
+.upper-inner{
+    height: 90%;
+    padding: 0px;
+}
+
+
+.lower-inner {
+    height: 90%;
+    padding: 0px;
+
+}
+
+.news-bubble {
+scale: .6;
+min-width: 60vh;
+}
+
+}
