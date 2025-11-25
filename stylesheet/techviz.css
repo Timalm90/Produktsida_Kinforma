@@ -10,7 +10,7 @@
 
 .techviz-background-image {
     position: absolute;
-    width: 100%;
+    width: 110%;
     object-fit: cover;
     /* opacity: 70%; */
     z-index: -1;

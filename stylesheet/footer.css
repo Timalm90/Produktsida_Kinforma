@@ -75,18 +75,31 @@ footer hr {
     width: 100%;
 }
 
-.footer-end img {
-    position: absolute;
-    opacity: 10%;
-    width: 80vw;
+.logo-footer {
+    /* position: absolute; */
+    /* opacity: 10%; */
+    width: 85vw;
     height: auto;
-    padding-top: 1rem;
-    /* bottom: 0; */
+    z-index: -1;
+    align-self: center;
+
+
 }
 
 @media screen and (min-width: 500px) {
     footer {
+        margin: 0 auto;
         padding: 5rem;
+        width: 70%;
+        /* justify-content: center; */
     }
+
+    .logo-footer {
+        width: 100%;
+        margin: 0 auto;
+        padding: none;
+    }
+
+    
 
 }
