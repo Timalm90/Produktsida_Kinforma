@@ -9,15 +9,37 @@
             rgb(19, 19, 19  ) 95%
         ),
         url("/components/images/BG_surfing.png");
+        
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    z-index: -2;
 }
+
+
+.turntable {
+    position: absolute;
+    top: -150px;
+    width: 100vw;
+    height: 150vh;
+    overflow: hidden;
+    z-index: -1;
+    
+}
+
+
+
+
+#myVideo {
+    width: 100vw;
+   
+}
+
+
 
 .hero-content {
     width: 100%;
@@ -26,18 +48,15 @@
     color: white;
     display: flex;
     flex-direction: column;
-
-    /* Instead of perfect distribution, we control spacing manually */
-    justify-content: flex-start; /* Text stays near the top */
+    justify-content: flex-start; 
     align-items: center;
 
-    padding-top: 1rem;
     position: relative;
 }
 
 .hero-content p {
     position: absolute;
-    bottom: 0%;  
+    bottom: 20%;  
     text-align: center;
 }
 
@@ -46,7 +65,7 @@
     display: flex;
     gap: 1rem;
     position: absolute;
-    bottom: 15%;                 /* Adjust this to move buttons up/down */
+    bottom: -75%;                 /* Adjust this to move buttons up/down */
 }
 
 /* Heading */
@@ -85,7 +104,47 @@
     background: rgba(31, 31, 31, 0.166);
 }
 
+@media screen and (max-width:1100px){
+
+
+.turntable {
+      display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -450px;
+    height: 200vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#myVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 200vw;
+   
+}
+
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: -15%;               
+}
+
+}
+
+
+
 @media screen and (min-width:410px){
+
+
+#myVideo {
+margin-top: -200px;
+}
+
+    
     .hero-buttons button {
         white-space: nowrap;
         gap: 20%;
@@ -95,14 +154,31 @@
     .hero-buttons {
     gap: 3rem;
     }
+
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: -5%;               
+}
+
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    height: 75%;                 /* Keeps text high and gives room below */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    position: relative;
+    margin-bottom: -50px;
+}
+
 }
 
 
 
 
-#myVideo {
-  position: absolute;
-  right: 0;
-  top: -300px;
-  width: 100vw;
-}

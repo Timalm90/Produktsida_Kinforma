@@ -10,9 +10,22 @@ document.querySelectorAll(".product-bubble").forEach(bubble => {
 
   img.draggable = false;
 
-  const updateImage = () => {
-    img.src = `/components/product-images/${product}/${currentColor}/${currentIndex}.png`;
+  /* -----------------------------
+     FADE TRANSITION CONTROLLER
+  --------------------------------*/
+  const fadeImage = () => {
+    img.classList.add("fade-out");
+
+    setTimeout(() => {
+      img.src = `/components/product-images/${product}/${currentColor}/${currentIndex}.png`;
+    }, 150);
+
+    img.onload = () => {
+      img.classList.remove("fade-out");
+    };
   };
+
+  const updateImage = fadeImage;
 
   const prevBtn = bubble.querySelector(".prev");
   const nextBtn = bubble.querySelector(".next");
@@ -46,7 +59,7 @@ document.querySelectorAll(".product-bubble").forEach(bubble => {
     }
   });
 
-  // POINTER SWIPE HANDLERS — outside swatch loop
+  // POINTER SWIPE
   let startX = null;
   let pointerId = null;
 
@@ -83,7 +96,7 @@ document.querySelectorAll(".product-bubble").forEach(bubble => {
   container.addEventListener("pointercancel", onPointerCancel);
   container.addEventListener("pointerleave", onPointerUp);
 
-  // INITIAL ACTIVE SWATCH — also outside swatch loop
+  // INITIAL ACTIVE SWATCH
   const defaultSwatch = bubble.querySelector(`.swatch[data-color="${currentColor}"]`);
   if (defaultSwatch) defaultSwatch.classList.add("active");
 

@@ -1,11 +1,13 @@
 <div class="hero">
 
 
-<!-- 
-<video autoplay muted loop id="myVideo">
-<source src="/components/videos/fannypack_turntable_portrait_test.webm" type="video/webm">
-</video> -->
-
+    <div class="turntable">
+        
+            <video autoplay muted loop id="myVideo">
+                <source src="/components/videos/kinforma_turntable_v3.webm" type="video/webm">
+            </video>
+        
+    </div>
     <div class="hero-content">
         <h1>Framtidens <br>mode,<span class="hero-accent"> idag</span>.</h1>
 

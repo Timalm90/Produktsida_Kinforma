@@ -1,7 +1,7 @@
 <section class="gallery-container">
-       <h1 class="product-heading">NYHETER</h1>
+  <h1 class="product-heading">NYHETER</h1>
   <div class="bubble-gallery">
- 
+
 
     <div class="gallery-bg"></div>
 
@@ -9,11 +9,15 @@
     <div class="product-bubble" data-product="fannypack">
 
       <div class="slide-container bubble-glass">
-         <img class="slide-img" src="/components/product-images/fannypack/Blue/1.png">
+        <img class="slide-img" src="/components/product-images/fannypack/Blue/1.png">
       </div>
 
-    <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-    <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg></button>
+      <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg></button>
 
       <div class="swatches">
         <div class="swatch" data-color="Blue" style="background:#4DA3FF"></div>
@@ -30,11 +34,15 @@
     <!-- PRODUCT: SMARTWATCH -->
     <div class="product-bubble" data-product="smartwatch">
       <div class="slide-container bubble-glass">
-          <img class="slide-img" src="/components/product-images/smartwatch/Blue/1.png">
-        </div>
+        <img class="slide-img" src="/components/product-images/smartwatch/Blue/1.png">
+      </div>
 
-        <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-        <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+      <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg></button>
+      <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg></button>
 
 
       <div class="swatches">
@@ -52,11 +60,15 @@
     <!-- PRODUCT: JACKET -->
     <div class="product-bubble" data-product="jacket">
       <div class="slide-container bubble-glass">
-          <img class="slide-img" src="/components/product-images/jacket/Blue/1.png">
-        </div>
-        
-        <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-        <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <img class="slide-img" src="/components/product-images/jacket/Blue/1.png">
+      </div>
+
+      <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg></button>
+      <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg></button>
 
 
       <div class="swatches">
@@ -74,11 +86,15 @@
     <!-- PRODUCT: THERMOS -->
     <div class="product-bubble" data-product="thermos">
       <div class="slide-container bubble-glass">
-          <img class="slide-img" src="/components/product-images/thermos/Blue/1.png">
-        </div>
-        
-        <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-        <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+        <img class="slide-img" src="/components/product-images/thermos/Blue/1.png">
+      </div>
+
+      <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg></button>
+      <button class="arrow next"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg></button>
 
 
       <div class="swatches">
@@ -94,4 +110,3 @@
 
   </div>
 </section>
-
