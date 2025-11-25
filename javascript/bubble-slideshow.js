@@ -6,7 +6,7 @@ document.querySelectorAll(".product-bubble").forEach(bubble => {
   const colors = ["Blue", "Green", "Sand"];
   let currentColor = "Blue";
   let currentIndex = 1;
-  const maxIndex = 3;
+  const maxIndex = 5;
 
   img.draggable = false;
 

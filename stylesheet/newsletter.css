@@ -183,7 +183,6 @@ font-size: 4rem;
 @media screen and (min-width: 700px) {
 
     .content-container {
-       
         display: flex;
         justify-content: center;
         width: 100%;
