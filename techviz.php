@@ -11,7 +11,7 @@
             <div>
                 <p class="techviz-p">Våra mångsidiga produkter minskar konsumtion genom att fungera för flera extremsporter och hålla längre. De är fullt spårbara, enkla att återvinna och designade för minsta möjliga klimatavtryck.</p>
                 <div class="techviz-image">
-                    <img src="./components/product-images/techviz/techviz_v1_front.png" alt="technical image">
+                    <img src="./components/product-images/techviz/techviz.png" alt="technical image">
                 </div>
             </div>
         </div>
