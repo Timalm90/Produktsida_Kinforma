@@ -88,7 +88,7 @@
     <div class="header-container-desktop menu-glass-desk" id="desktopHeader" role="navigation" aria-label="Primary" aria-hidden="true">
     <nav class="nav-left-desk">
         <a href="index.php" class="logo-link">
-          <img class="logo-header" src="./components/logo/Vector.png" alt="Kinforma logo" />
+          <img class="logo-header" src="./components/logo/vector.png" alt="Kinforma logo" />
         </a>
 
         <!-- Nyheter -->
