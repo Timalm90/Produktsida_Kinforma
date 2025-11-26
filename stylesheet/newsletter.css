@@ -71,7 +71,7 @@ cursor: pointer;
     background-image: url(/components/background-images/merch_background_final.jpg);
     background-size: cover;
     border-radius: 21px;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     border: .1rem solid rgba(255, 255, 255, 0.228);
     justify-content: space-around;
@@ -232,7 +232,7 @@ font-size: 4rem;
 
 .news-bubble {
 scale: .6;
-min-width: 60vh;
+maw-width: 50vh;
 }
 
 .registration-container {
