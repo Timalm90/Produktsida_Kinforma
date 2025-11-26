@@ -10,7 +10,7 @@
         <p>För exklusiva limited edition produkter!</p>
         </div>    
     </br>
-        <input type="text" name="email" placeholder="Ange din e-postadress*" class="register-mail">
+        <input type="text" name="email" placeholder="Ex: jane.doe@kinforma.com" class="register-mail">
 
     <br>
         <div class="reg-buttons">
