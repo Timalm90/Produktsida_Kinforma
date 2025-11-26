@@ -6,14 +6,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="stylesheet/main.css" />
-  <link rel="stylesheet" href="/stylesheet/header.css" />
-  <link rel="stylesheet" href="/stylesheet/hero.css" />
-  <link rel="stylesheet" href="stylesheet/products.css" />
-  <link rel="stylesheet" href="stylesheet/techviz.css" />
-  <link rel="stylesheet" href="stylesheet/categories.css" />
-  <link rel="stylesheet" href="/stylesheet/newsletter.css" />
-  <link rel="stylesheet" href="/stylesheet/footer.css" />
+  <link rel="stylesheet" href="./stylesheet/main.css" />
+  <link rel="stylesheet" href="./stylesheet/header.css" />
+  <link rel="stylesheet" href="./stylesheet/hero.css" />
+  <link rel="stylesheet" href="./stylesheet/products.css" />
+  <link rel="stylesheet" href="./stylesheet/techviz.css" />
+  <link rel="stylesheet" href="./stylesheet/categories.css" />
+  <link rel="stylesheet" href="./stylesheet/newsletter.css" />
+  <link rel="stylesheet" href="./stylesheet/footer.css" />
 
   <title>Kinforma</title>
 </head>
@@ -35,20 +35,20 @@
 
         <!-- Logo (mobile) -->
         <a href="index.php" class="logo header-logo">
-          <img class="logo-header" src="/components/logo/kinforma_logo_text.png" alt="Kinforma logo" />
+          <img class="logo-header" src="./components/logo/kinforma_logo_text.png" alt="Kinforma logo" />
         </a>
       </div>
 
       <!-- Quick Actions (mobile) -->
       <div class="header-right header-icons">
         <button aria-label="Search" class="icon-btn">
-          <img src="components/icons/search.svg" alt="search-icon" />
+          <img src="./components/icons/search.svg" alt="search-icon" />
         </button>
         <button aria-label="Account" class="icon-btn">
-          <img src="components/icons/account.svg" alt="account-icon" />
+          <img src="./components/icons/account.svg" alt="account-icon" />
         </button>
         <button aria-label="Cart" class="icon-btn">
-          <img src="components/icons/cart.svg" alt="cart-icon" />
+          <img src="./components/icons/cart.svg" alt="cart-icon" />
         </button>
       </div>
 
@@ -88,7 +88,7 @@
     <div class="header-container-desktop menu-glass-desk" id="desktopHeader" role="navigation" aria-label="Primary" aria-hidden="true">
     <nav class="nav-left-desk">
         <a href="index.php" class="logo-link">
-          <img class="logo-header" src="/components/logo/Vector.png" alt="Kinforma logo" />
+          <img class="logo-header" src="./components/logo/Vector.png" alt="Kinforma logo" />
         </a>
 
         <!-- Nyheter -->
@@ -189,23 +189,22 @@
 
       <nav class="nav-right-desk">
         <button aria-label="Search" class="icon-btn">
-          <img src="components/icons/search.svg" alt="search-icon" class="icon-desk" />
+          <img src="./components/icons/search.svg" alt="search-icon" class="icon-desk" />
         </button>
 
         <input type="text" name="Sök" class="search-desk" placeholder="Sök" />
 
         <button aria-label="Account" class="icon-btn">
-          <img src="components/icons/account.svg" alt="account-icon" class="icon-desk" />
+          <img src="./components/icons/account.svg" alt="account-icon" class="icon-desk" />
         </button>
 
         <button aria-label="Cart" class="icon-btn">
-          <img src="components/icons/cart.svg" alt="cart-icon" class="icon-desk" />
+          <img src="./components/icons/cart.svg" alt="cart-icon" class="icon-desk" />
         </button>
       </nav>
     </div>
 
   </header>
 
-  <script src="/scripts/header.js"></script>
 </body>
 </html>

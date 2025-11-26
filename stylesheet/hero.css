@@ -8,7 +8,7 @@
             rgba(0, 0, 0, 0.3) 50%,
             rgb(19, 19, 19  ) 95%
         ),
-        url("/components/images/BG_surfing.png");
+        url("./components/images/BG_surfing.png");
         
     background-size: cover;
     background-position: center;

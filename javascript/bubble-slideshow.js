@@ -15,7 +15,7 @@ document.querySelectorAll(".product-bubble").forEach(bubble => {
     img.classList.add("fade-out");
 
     setTimeout(() => {
-      img.src = `/components/product-images/${product}/${currentColor}/${currentIndex}.png`;
+      img.src = `./components/product-images/${product}/${currentColor}/${currentIndex}.png`;
     }, 50);
 
     img.onload = () => {

@@ -68,7 +68,7 @@ cursor: pointer;
 
 
 .content-container {
-    background-image: url(/components/background-images/merch_background_final.jpg);
+    background-image: url("../components/background-images/merch_background_final.jpg");
     background-size: cover;
     border-radius: 21px;
     height: 70vh;

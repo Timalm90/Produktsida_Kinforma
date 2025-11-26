@@ -23,7 +23,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background-image: url(/components/background-images/lines_texture_vector.jpg);
+  background-image: url("../components/background-images/lines_texture_vector.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -178,6 +178,7 @@
   .product-bubble:hover {
     margin: 30px;
     transform: scale(1.3);
+    
   }
 }
 

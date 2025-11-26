@@ -9,7 +9,7 @@
     <div class="product-bubble" data-product="fannypack">
 
       <div class="slide-container bubble-glass">
-        <img class="slide-img" src="/components/product-images/fannypack/Blue/1.png">
+        <img class="slide-img" src="./components/product-images/fannypack/Blue/1.png">
       </div>
 
       <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -34,7 +34,7 @@
     <!-- PRODUCT: SMARTWATCH -->
     <div class="product-bubble" data-product="smartwatch">
       <div class="slide-container bubble-glass">
-        <img class="slide-img" src="/components/product-images/smartwatch/Blue/1.png">
+        <img class="slide-img" src="./components/product-images/smartwatch/Blue/1.png">
       </div>
 
       <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -60,7 +60,7 @@
     <!-- PRODUCT: JACKET -->
     <div class="product-bubble" data-product="jacket">
       <div class="slide-container bubble-glass">
-        <img class="slide-img" src="/components/product-images/jacket/Blue/1.png">
+        <img class="slide-img" src="./components/product-images/jacket/Blue/1.png">
       </div>
 
       <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -86,7 +86,7 @@
     <!-- PRODUCT: THERMOS -->
     <div class="product-bubble" data-product="thermos">
       <div class="slide-container bubble-glass">
-        <img class="slide-img" src="/components/product-images/thermos/Blue/1.png">
+        <img class="slide-img" src="./components/product-images/thermos/Blue/1.png">
       </div>
 
       <button class="arrow prev"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

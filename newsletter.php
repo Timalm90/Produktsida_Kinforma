@@ -31,7 +31,7 @@
                     robust nog för dina
                     vildaste äventyr!</p>
                 <div class="news-bubble bubble-glass">
-                    <img class="news-img" src="/components/product-images/merch/carbine.png">
+                    <img class="news-img" src="./components/product-images/merch/carbine.png">
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
                     med specialfärg och
                     personliga initialer.</p>
                 <div class="news-bubble bubble-glass">
-                    <img class="news-img" src="/components/product-images/merch/lim-ed.png">
+                    <img class="news-img" src="./components/product-images/merch/lim-ed.png">
                 </div>
             </div>
 
