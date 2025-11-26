@@ -3,7 +3,7 @@
 
     <div class="turntable">
         
-            <video autoplay muted loop id="myVideo">
+            <video autoplay muted loop playsinline webkit-playsinline id="myVideo">
                 <source src="./components/videos/kinforma_turntable_v3.webm" type="video/webm">
             </video>
         
