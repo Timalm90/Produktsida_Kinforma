@@ -216,6 +216,7 @@
     }
 
     .dropdown {
+      
         position: absolute;
         left: 0;
         width: 100%;
@@ -260,19 +261,23 @@
 
     .two-col,
     .two-cols {
+      
         display: flex;
         gap: 60px;
     }
 
     .divider {
-        width: 1px;
-        height: 100%;
-        background: var(--divider);
+        width: 100px;
+        opacity: 1;
+        height: 130px;
+        background: black;
         margin: 0 40px;
+        outline: 1px solid rgb(255, 255, 255);
     }
 
     .dropdown h3,
     .dropdown h4 {
+      
         margin-bottom: 12px;
     }
 
@@ -394,3 +399,5 @@ details[open] summary::after {
 
     background-color: #00000052;
 }
+
+
