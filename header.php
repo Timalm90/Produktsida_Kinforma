@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="./stylesheet/footer.css" />
 
   <title>Kinforma</title>
+    <link rel="icon" type="image/x-icon" href="./components/logo/favicon.png">
+
 </head>
 
 <body>
