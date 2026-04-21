@@ -1,4 +1,16 @@
-# Kinforma
+<h1 align="center">
+Kinforma
+</h1>
+<p align="center">
+
+<p align="center">
+
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white">
+  <img src="https://img.shields.io/badge/PHP-777BB4?logo=php&logoColor=white">
+  <img src="https://img.shields.io/badge/JavaScript-yellow?logo=javascript">
+
+<p align="center">
 
 Kinforma is a concept created in collaboration between Web Developer, Digital Designer and Computer Graphics Design students at Yrgo. This is the first assignment working on a project of this scale.
 
