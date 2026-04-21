@@ -37,8 +37,8 @@ Kinforma is a concept created in collaboration between Web Developer, Digital De
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd Kinforma
+   git clone https://github.com/Timalm90/Produktsida_Kinforma
+   cd Produktsida_Kinforma
    ```
 
 2. Start the PHP development server:
